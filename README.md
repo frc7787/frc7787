@@ -1,2 +1,2 @@
-# frc7787
-Official website of frc7787, the reyBots
+# website
+frc7787 test website

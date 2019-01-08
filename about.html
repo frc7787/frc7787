@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Reynolds Reybots</title>
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+	<script>
+
+	</script>
+	<!--<div id="banner"></div>-->
+<h2><div style="float: left">Reynolds Reybots</div>
+		
+      <div class="topnav">
+ <a href="gallery.html">Gallery</a> 
+  <a class="active" href="about.html">About Us</a><a href="sponsors.html">Sponsors</a>
+ 
+  
+  <a href="home.html">Home</a>
+</h2>
+		</div>
+    </div>
+</head>
+
+<body>
+	yeet
+
+<div class="tab">
+  <center><button class="tablinks" onclick="openTab(event, 'Team')">Our Team</button>
+  <button class="tablinks" onclick="openTab(event, 'Mission')">Our Mission</button>
+</div>
+
+<div id="Team" class="tabcontent">
+  <h3>Our Team</h3>
+  <p>The Reynolds Reybots are a FIRST Robotics team from Reynolds Secondary School, Greater Victoria School District 61. The team was founded by a group of students who were passionate in STEM and interested in starting a robotics team with the intention to compete in the FIRST Robotics Competition.</p>
+</div>
+
+<div id="Mission" class="tabcontent">
+  <h3>Our Mission</h3>
+  <p>As a rookie team, the Reynolds Reybots hopes to learn from other more experienced teams in the competition as well as foster the interest of science, technology, engineering and mathematics in their community.</p> 
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</body>
+
+</html>
