@@ -288,3 +288,12 @@ div.desc {
   -moz-animation-delay: 30s;
   animation-delay: 30s;
 }
+
+.back {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -9999;
+}
