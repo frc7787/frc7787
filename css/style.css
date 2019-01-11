@@ -141,12 +141,7 @@ div.desc {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-   -o-transition:color .2s ease-out, background 2s ease-in;
-  -ms-transition:color .2s ease-out, background 2s ease-in;
-  -moz-transition:color .2s ease-out, background 2s ease-in;
-  -webkit-transition:color .2s ease-out, background 2s ease-in;
   /* ...and now for the proper property */
-  transition:color .2s ease-out, background 2s ease-in;
 }
 
 .topnav a:hover {
@@ -175,7 +170,6 @@ div.desc {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
     font-size: 17px;
 }
 
@@ -295,114 +289,11 @@ div.desc {
   animation-delay: 30s;
 }
 
-@-webkit-keyframes imageAnimation {
-  0% {
-    opacity: 0;
-    -webkit-animation-timing-function: ease-in;
-  }
-  12.5% {
-    opacity: 1;
-    -webkit-animation-timing-function: ease-out;
-  }
-  25% {
-    opacity: 1;
-  }
-  37.5% {
-    opacity: 1;
- }
-  100% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes imageAnimation {
-  0% {
-    opacity: 0;
-    -moz-animation-timing-function: ease-in;
-  }
-  12.5% {
-    opacity: 1;
-    -moz-animation-timing-function: ease-out;
-  }
-  25% {
-    opacity: 1;
-  }
-}
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes imageAnimation {
-  0% {
-    opacity: 0;
-    -webkit-animation-timing-function: ease-in;
-    -moz-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  12.5% {
-    opacity: 1;
-    -webkit-animation-timing-function: ease-out;
-    -moz-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  25% {
-    opacity: 1;
-  }
-}
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes titleAnimation {
-  0% {
-    opacity: 0;
-  }
-  12.5% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes titleAnimation {
-  0% {
-    opacity: 0;
-  }
-  12.5% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes titleAnimation {
-  0% {
-    opacity: 0;
-  }
-  12.5% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.no-cssanimations .slideshow li span {
-  opacity: 1;
+.back {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -9999;
 }
