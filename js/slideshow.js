@@ -3,7 +3,7 @@
             var i = 2; // Counter In
             var o = 1; // Counter Out
             function cycleImages() {
-                $("#slide" + o).fadeOut(4000);
+                $("#slide" + o).fadeOut(6000);
                 $("#slide" + i).fadeIn(4000);
                 o = i;
                 if (i < ni) {
