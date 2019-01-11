@@ -4,7 +4,7 @@
             var o = 1; // Counter Out
             function cycleImages() {
                 $("#slide" + o).fadeOut(4000);
-                $("#slide" + i).fadeIn(2000);
+                $("#slide" + i).fadeIn("fast");
                 o = i;
                 if (i < ni) {
                     i = i + 1;
