@@ -1,53 +1,36 @@
-#banner {
-    background:url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2F21-electronics.com%2Fwp-content%2Fuploads%2F2015%2F08%2FBanner-1.png&f=1');
-    width:100%;
-    min-height:189px;
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+/* Deleting margins */
+div {margin: 0px;padding: 0px;}
+
+.top {
+  width: 100%;
+  height: 100%;
 }
 
-.button {
-    background-color: rgb(0, 151, 252);
-    border: none;
-    color: white;
-    padding: 10px 16px;
-    text-align: center;
-    font-size: 15px;
-    cursor: pointer;
+.nav {
+  width: 100%;
+  height: 10%;
 }
-
-.button:hover {
-    background-color: rgb(0, 100, 167);
-}
-
-.button2 {
-    background-color: rgb(0, 151, 252);
-    border: none;
-    color: white;
-    padding: 17px 27px;
-    text-align: center;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.button2:hover {
-    background-color: rgb(0, 100, 167);
-}
-
-h1 {
-  margin-left: -15%;
-  margin-right: -15%;
+.photos{
+  z-index: -10;
 }
 
 body {
  /* background-image: url('pictures/download.png');
 /*background: linear-gradient(#ffffff,#ffffff);*/
-background-color: white;
-margin-left: 15%;
-margin-right: 15%;
-border: 2px black;
-padding: 10px 10px 10px 10px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: white;
+color: #fff;
+}
+
+h1 {
+  margin: 1% 0% 1% 1%;
+  padding: 0px;
+  font-size: 16px;
 }
 
 h2 {
@@ -58,80 +41,10 @@ p {
 color: black;
 }
 
-#text
-{
-    margin-left: 0px;
-    width: 555px;
-    word-wrap: break-word;  
-}​
 
-div.gallery {
-    margin: 5px;
-    border: 1px solid rgb(95, 95, 95);
-    float: left;
-    width: 250px;
-}
-
-div.gallery:hover {
-    border: 1px solid rgb(12, 12, 12);
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-.yeet {
-  font-family: sans-serif;
-}
-
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
-.topnav {
+/*.topnav {
   overflow: hidden;
- /* background-color: #2980B9;*/
+  background-color: #2980B9;
 }
 
 .topnav a {
@@ -141,154 +54,23 @@ div.desc {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  /* ...and now for the proper property */
+  /* ...and now for the proper property 
 }
 
 .topnav a:hover {
-  /*background-color: rgb(35, 107, 155);*/
+  /*background-color: rgb(35, 107, 155);
   color: yellow;
 } 
 
 .topnav a.active {
-  /*background-color: #4CAF50; */
+  /*background-color: #4CAF50;
   color: gold;
   
-}
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc
-    background-color: #f1f1f1
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    /*float: right;*/
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    margin: auto;
-}
+}*/
 
 
 
-
-
-
-
-.slideshow {
-  list-style: none;
-  z-index: -1;
-}
-.slideshow li span {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  color: transparent;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: none;
-  opacity: 0;
-  z-index: -2;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-animation: imageAnimation 24s linear infinite 0s;
-  -moz-animation: imageAnimation 24s linear infinite 0s;
-  animation: imageAnimation 24s linear infinite 0s;
-}
-.slideshow li h3 {
-  position: absolute;
-  text-align: center;
-  z-index: 2;
-  bottom: 150px;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  font-size: 4.0625em;
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-  color: #fff;
-  -webkit-animation: titleAnimation 24s linear 1 0s;
-  -moz-animation: titleAnimation 24s linear 1 0s;
-  animation: titleAnimation 24s linear 1 0s;
-}
-@media only screen and (min-width: 768px) {
-  .slideshow li h3 {
-    bottom: 30px;
-    font-size: 8.125em;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .slideshow li h3 {
-    font-size: 10.9375em;
-  }
-}
-
-.slideshow li:nth-child(1) span {
-  background-image: url(../squat.jpg);
-}
-
-.slideshow li:nth-child(2) span {
-  background-image: url(../floor.jpg);
-  -webkit-animation-delay: 7s;
-  -moz-animation-delay: 7s;
-  animation-delay: 7s;
-}
-
-.slideshow li:nth-child(3) span {
-  background-image: url(../stand.jpg);
-  -webkit-animation-delay: 14s;
-  -moz-animation-delay: 14s;
-  animation-delay: 14s;
-}
-
-.slideshow li:nth-child(4) span {
-  background-image: url(../standing-around.jpg);
-  -webkit-animation-delay: 20s;
-  -moz-animation-delay: 20s;
-  animation-delay: 20s;
-}
-
-
-.slideshow li:nth-child(5) span {
-  background-image: url(../driver.jpg);
-  -webkit-animation-delay: 24s;
-  -moz-animation-delay: 24s;
-  animation-delay: 24s;
-}
-
-
-.slideshow li:nth-child(6) span {
-  background-image: url(../hackerman.jpg);
-  -webkit-animation-delay: 30s;
-  -moz-animation-delay: 30s;
-  animation-delay: 30s;
-}
-
+/* Background slideshow photos */
 .back {
   position: absolute;
   left: 0px;
