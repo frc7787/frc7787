@@ -1,11 +1,3 @@
- $(function () {
-            var ni = $( ".back" ).length; // Number of images
-            var i = 2; // Counter In
-@ -19,3 +20,26 @@
-            cycleImages();
-            setInterval(function () { cycleImages() }, 7000);
-        });
-=======
    $(function () {
             var ni = $( ".back" ).length; // Number of images
             var i = 2; // Counter In
