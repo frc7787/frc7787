@@ -38,9 +38,14 @@ div {margin: 0px;padding: 0px;}
 .topnav {
   
 }
-/*.photos{
+.photos{
+  z-index: -9999;
   overflow: hidden;
-}*/
+  min-height: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  width: 100%;
+}
 
 body {
  /* background-image: url('pictures/download.png');
@@ -100,7 +105,9 @@ color: black;
   left: 0px;
   top: 0px;
   height: 100%;
+  object-fit: cover;
   width: 100%;
+  max-height: 100%;
 }
 
 /*
