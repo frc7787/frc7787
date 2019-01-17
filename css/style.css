@@ -38,9 +38,9 @@ div {margin: 0px;padding: 0px;}
 .topnav {
   
 }
-.photos{
+/*.photos{
   overflow: hidden;
-}
+}*/
 
 body {
  /* background-image: url('pictures/download.png');
@@ -96,22 +96,11 @@ color: black;
 /* Background slideshow photos */
 .back {
   z-index: -9999;
-  /*position: absolute;
+  position: absolute;
   left: 0px;
   top: 0px;
   height: 100%;
   width: 100%;
-  object-fit: cover; */
-  min-height:100%;
-  min-width:100%;
-  height:auto;
-  width:auto;
-  position:absolute;
-  top:0; bottom:0;
-  margin:auto;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  overflow: hidden;
 }
 
 /*
