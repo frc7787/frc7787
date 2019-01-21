@@ -8,10 +8,10 @@ html, body {
 /* Deleting margins */
 div {margin: 0px;padding: 0px;}
 
-.logo {
+/*.logo {
   margin-left: 2%;
   margin-top:2%;
-}
+}*/
 .top {
   width: 100%;
   height: 100%;
