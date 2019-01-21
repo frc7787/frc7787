@@ -22,7 +22,7 @@ div {margin: 0px;padding: 0px;}
   width: 100%;
   height: 150%;
   top: 80%;
-  background-color: #000000;
+  background-color: #181818;
 }
 
 .nav {
@@ -67,12 +67,12 @@ h1 {
 }
 
 h2 {
-  color: grey;
+  color: darkgrey;
    font-size: 50px;
 }
 
 p {
-color: grey;
+color: darkgrey;
   margin-left: 20%;
   margin-right: 20%;
   font-size: 30px;
