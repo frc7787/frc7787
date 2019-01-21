@@ -67,12 +67,12 @@ h1 {
 }
 
 h2 {
-  color: grey;
+  color: lightgrey;
    font-size: 50px;
 }
 
 p {
-color: grey;
+color: lightgrey;
   margin-left: 20%;
   margin-right: 20%;
   font-size: 30px;
