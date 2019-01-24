@@ -1,13 +1,17 @@
 html, body {
   /*height: 100%;*/
   width: 100%;
-  margin: 0px;
+  margin: 0%;
   padding: 0px;
   /*overflow: hidden;*/
 }
 /* Deleting margins */
 div {margin: 0px;padding: 0px;}
 
+.logo {
+  margin-left: 1%;
+  margin-top:1%;
+}
 .top {
   width: 100%;
   height: 100%;
@@ -16,8 +20,9 @@ div {margin: 0px;padding: 0px;}
 .down {
   position: absolute;
   width: 100%;
-  height: 150%;
-  top: 100%;
+  height: 100%;
+  top: 80%;
+  background-color: #181818;
 }
 
 .nav {
@@ -51,7 +56,7 @@ body {
  /* background-image: url('pictures/download.png');
 /*background: linear-gradient(#ffffff,#ffffff);*/
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: #fff;
+
 }
 
 h1 {
@@ -62,12 +67,19 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: #cccccc;
+   font-size: 50px;
+  margin-left: 10%;
+  margin-right: 40%;
 }
 
 p {
-color: black;
+color: #cccccc;
+  margin-left: 10%;
+  margin-right: 40%;
+  font-size: 30px;
 }
+
 
 
 /*.topnav {
