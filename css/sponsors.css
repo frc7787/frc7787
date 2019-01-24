@@ -85,6 +85,15 @@ h3 {
 	font-size: 2.5rem;
 	color: #ccc;
 }
-.sponsorimg {
+.platinum>.allsponsors>.sponsor>.sponsorimg {
+	height: 25rem;
+}
+.gold>.allsponsors>.sponsor>.sponsorimg {
+	height: 20rem;
+}
+.silver>.allsponsors>.sponsor>.sponsorimg {
 	height: 15rem;
+}
+.bronze>.allsponsors>.sponsor>.sponsorimg {
+	height: 10rem;
 }
