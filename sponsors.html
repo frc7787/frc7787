@@ -24,8 +24,8 @@
 				</div>
 				<!-- Menu bar -->
 				<!--<div class="topnav">
-												<a href="index.html">Home</a>
-												<a class="active" href="#">Sponsors</a>
+					<a href="index.html">Home</a>
+					<a class="active" href="#">Sponsors</a>
 				</div>-->
 			</div>
 			<!-- This is the part that applies backgrounds, if you want to increase the number of images create a new <img> with id 'slide' + the next number.-->
@@ -35,11 +35,14 @@
 			</div>
 		</div>
 		<div style="background-color: #181818;" class="down">
+			<!-- HOW TO ADD NEW SPONSORS!!!
+				For creating a new sponsor you will need the logo of them and know the level that they are. Once you have that you must create a <div> inside .allsponsors (of the correct level) with the class .sponsor. In also need onclick="window.location.href = 'https://example.com/';" Inside that <div> there should a <img> with the class .sponsorimg and a <h3> with the name of the company.
+			-->
 			<div class="sponsorlist">
 				<div class="platinum">
 					<h2><span style="color: #e5e4e2;">Platinum</span> Sponsors</h2>
 					<div class="allsponsors">
-						<div class="sponsor">
+						<div class="sponsor" onclick="window.location.href = 'https://www.coastcapitalsavings.com/';">
 							<img class="sponsorimg" src="sponsors/Coast+Capital.png" alt="Coast Capital Savings Logo">
 							<h3>Coast Capital Savings</h3>
 						</div>

@@ -79,6 +79,7 @@
     -ms-flex-align: center;
     align-items: center;
     margin: 1% 1% 1% 1%;
+    cursor: pointer;
 }
 h3 {
 	font-size: 2.5rem;
