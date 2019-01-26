@@ -3,14 +3,18 @@ html, body {
   width: 100%;
   margin: 0%;
   padding: 0px;
+  font-size: 1.3vmin;
   /*overflow: hidden;*/
 }
 /* Deleting margins */
 div {margin: 0px;padding: 0px;}
 
+.titles {
+  margin: 0.75vh 0px 0.75vh 1%;
+}
 .logo {
-  margin-left: 1%;
-  margin-top:1%;
+  width: 10vh;
+  height: 10vh;
 }
 .top {
   width: 100%;
@@ -20,8 +24,7 @@ div {margin: 0px;padding: 0px;}
 .down {
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 80%;
+  top: 85%;
   background-color: #181818;
 }
 
@@ -32,16 +35,55 @@ div {margin: 0px;padding: 0px;}
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   background-color: rgba(36,41,46,0.98);
   color: #fff;
   width: 100%;
   height: 15%;
 }
+
+.titles {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .topnav {
-  
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;/*
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;*/
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: middle;
+  vertical-align: middle;
+  margin-right: 5rem;
+}
+a {
+  margin: 0px 5% 0px 5%;
+  font-size: 4vh;
+  text-decoration: none;
+  color: #ccc;
 }
 .photos{
   z-index: -9999;
@@ -66,49 +108,87 @@ h1 {
   vertical-align: middle;
 }
 
-h2 {
+h2, p {
   color: #cccccc;
-   font-size: 50px;
-  margin-left: 10%;
-  margin-right: 40%;
+  margin-left: 5%;
 }
-
+h2 {
+  font-size: 5rem;
+  margin-top: 0px;
+  padding: 0px;
+}
 p {
-color: #cccccc;
-  margin-left: 10%;
-  margin-right: 40%;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 
-
-/*.topnav {
-  overflow: hidden;
-  background-color: #2980B9;
+.down {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
-.topnav a {
-  float: right;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  /* ...and now for the proper property 
+.text , .big {
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  margin-top: 3%;
 }
-
-.topnav a:hover {
-  /*background-color: rgb(35, 107, 155);
-  color: yellow;
-} 
-
-.topnav a.active {
-  /*background-color: #4CAF50;
-  color: gold;
-  
-}*/
-
-
+.text {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 3 1 auto;
+  -ms-flex: 3 1 auto;
+  flex: 3 1 auto;
+  width: 65%;
+  margin-right: 2.5%
+}
+.big {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 25%;
+  margin-left: 2.5%;
+  margin-right: 5%;
+}
+.small {
+  display: none;
+}
+@media only screen and (max-width: 1016px) {
+  .text {
+    width: 90%;
+    margin-right: 5%;
+  }
+  .big {
+    display: none;
+  }
+  .small {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 90%;
+    margin: 0px 5% 0px 5%;
+  }
+}
 
 /* Background slideshow photos */
 .back {

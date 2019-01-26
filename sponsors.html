@@ -1,32 +1,81 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Reynolds Reybots</title>
-	<link href="../style.css" rel="stylesheet" type="text/css" />
-	<script>
-
-	</script>
-<!--	<div id="banner"></div>-->
-	<h2><div style="float: left">Reynolds Reybots</div>
-		
-      <div class="topnav">
- <a href="gallery.html">Gallery</a> 
-  <a href="about.html">About Us</a><a class="active" href="sponsors.html">Sponsors</a>
- 
-  
-  <a  href="home.html">Home</a>
-</h2>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="img/bannerless.png">
+		<meta charset="utf-8">
+		<meta lang="en-ca">
+		<meta name="viewport" content="width=device-width">
+		<meta name="keywords" content="Reybots, Robotics, Reynolds, FIRST, frc, 7787">
+		<meta name="description" content="The official site of the Reynolds Reybots">
+		<meta name="author" content="Connor & Markel">
+		<title>Reynolds Reybots</title>
+		<link rel="canonical" href="https://frc7787.ca/">
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/sponsors.css">
+		<!-- JQUery from Google -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<div class="top">
+			<div class="nav">
+				<div class="titles">
+					<img class="logo" src="img/logo.png">
+					<!-- <h1><span class="rey">Reynolds </span>Reybots</h1> -->
+				</div>
+				<!-- Menu bar -->
+				<!--<div class="topnav">
+					<a href="index.html">Home</a>
+					<a class="active" href="#">Sponsors</a>
+				</div>-->
+			</div>
+			<!-- This is the part that applies backgrounds, if you want to increase the number of images create a new <img> with id 'slide' + the next number.-->
+			<div class="photos">
+				<img id="slide1" class="back" src="sponsors/Coast_capital.png" alt="Coast Capital Savings">
+				<!-- 				<img style="display: none;" id="slide2" class="back" src="img/stand.jpg" alt="Team with material"> -->
+			</div>
 		</div>
-</head>
-
-<body>
-	yeet
-	<script src="../script.js">
-
-	</script>
-</body>
-
+		<div style="background-color: #181818;" class="down">
+			<!-- HOW TO ADD NEW SPONSORS!!!
+				For creating a new sponsor you will need the logo of them and know the level that they are. Once you have that you must create a <div> inside .allsponsors (of the correct level) with the class .sponsor. In also need onclick="window.location.href = 'https://example.com/';" Inside that <div> there should a <img> with the class .sponsorimg (not in starter plan) and a <h3> with the name of the company.
+			-->
+			<div class="sponsorlist">
+				<!-- <div class="platinum">
+					<h2><span style="color: #e5e4e2;">Platinum</span> Sponsors</h2>
+					<div class="allsponsors">
+						
+					</div>
+				</div>
+				 <div class="gold">
+					<h2><span style="color: #D4AF37;">Gold</span> Sponsors</h2>
+					<div class="allsponsors">
+						
+					</div>
+				</div>
+				<div class="silver">
+					<h2><span style="color: #C0C0C0;">Silver</span> Sponsors</h2>
+					<div class="allsponsors">
+						
+					</div>
+				</div> -->
+				<div class="bronze">
+					<h2><span style="color: #cd7f32;">Bronze</span> Sponsors</h2>
+					<div class="allsponsors">
+						<div class="sponsor" onclick="window.location.href = 'https://www.coastcapitalsavings.com/';">
+							<img class="sponsorimg" src="sponsors/Coast+Capital.png" alt="Coast Capital Savings Logo">
+							<h3>Coast Capital Savings</h3>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="starter">
+					<h2>Starter Sponsors</h2>
+					<div class="allsponsors">
+						
+					</div>
+				</div>  -->
+			</div>
+		</div>
+	</body>
+	<!-- <script src="js/script.js"></script> -->
+	<script src="js/slideshow.js"></script>
 </html>
