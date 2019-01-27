@@ -74,10 +74,12 @@ div {margin: 0px;padding: 0px;}
   flex-direction: row;*/
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: right;
   text-align: middle;
   vertical-align: middle;
   margin-right: 5rem;
+  font-size: 4vh;
+  
 }
 a {
   margin: 0px 5% 0px 5%;
