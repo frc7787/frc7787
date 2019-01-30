@@ -78,9 +78,35 @@ div {margin: 0px;padding: 0px;}
   text-align: middle;
   vertical-align: middle;
   margin-right: 5rem;
-  font-size: 4vh;
+  font-size: 4vh;  
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+   -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+  /* ...and now for the proper property */
+  transition:color .2s ease-out, background 2s ease-in;
+}
+
+.topnav a:hover {
+  /*background-color: rgb(35, 107, 155);*/
+  color: yellow;
+} 
+
+.topnav a.active {
+  /*background-color: #4CAF50; */
+  color: gold;
   
 }
+
 a {
   margin: 0px 5% 0px 5%;
   font-size: 4vh;
