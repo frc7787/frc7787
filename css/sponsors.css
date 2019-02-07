@@ -17,6 +17,11 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 100%;
+}
+.sponsorlist {
+    width: 100%;
+    text-align: center;
 }
 .platinum, .gold, .bronze, .silver, .starter {
 	display: -ms-flexbox;
@@ -38,6 +43,7 @@
     -ms-flex-align: center;
     align-items: center;
     margin-top: 5%;
+    width: 100%;
 }
 .allsponsors {
 	display: -ms-flexbox;
