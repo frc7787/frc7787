@@ -1,1 +1,228 @@
+html, body {
+  /*height: 100%;*/
+  width: 100%;
+  margin: 0%;
+  padding: 0px;
+  font-size: 1.3vmin;
+  /*overflow: hidden;*/
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Deleting margins */
+div {margin: 0px;padding: 0px;}
 
+.titles {
+  margin: 0.75vh 0px 0.75vh 1%;
+}
+.logo {
+  width: 10rem;
+  height: 10rem;
+}
+.top {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.down {
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  background-color: #181818;
+}
+
+.nav {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  height: 15%;
+}
+
+.titles {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.topnav {
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;/*
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;*/
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: middle;
+  vertical-align: middle;
+  margin: 0px 5rem 0px 0px;
+  font-size: 4vh;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+.snapwidget-widget{
+  width: 100%;
+}
+.topnav a {
+  color: #fff;
+  text-align: center;
+  margin: 0px 10% 0px 5%;
+  text-decoration: none;
+  -webkit-text-stroke: 0.1rem rgba(5,5,5,0.5);
+  font-weight: bold;
+  font-family: 'arial','sans-serif-light',sans-serif;
+  font-size: 2rem;
+   -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+  /* ...and now for the proper property */
+  transition:color .2s ease-out, background 2s ease-in;
+}
+
+.topnav a:hover {
+  /*background-color: rgb(35, 107, 155);*/
+  color: yellow;
+} 
+
+.topnav a.active {
+  /*background-color: #4CAF50; */
+  color: gold;
+  
+}
+.photos{
+  z-index: -9999;
+  overflow: hidden;
+  min-height: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+h1 {
+  margin: 0% 0% 0% 1.5%;
+  padding: 0px;
+  font-size: 5vh;
+  vertical-align: middle;
+}
+
+h2, p {
+  color: #cccccc;
+  margin-left: 5%;
+}
+h2 {
+  font-size: 5rem;
+  margin-top: 0px;
+  padding: 0px;
+}
+p {
+  font-size: 3rem;
+}
+.down {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.text , .big {
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  margin-top: 3%;
+}
+.text {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 3 1 auto;
+  -ms-flex: 3 1 auto;
+  flex: 3 1 auto;
+  width: 65%;
+  margin-right: 2.5%
+}
+.big {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 25%;
+  margin-left: 2.5%;
+  margin-right: 5%;
+}
+.small {
+  display: none;
+}
+@media only screen and (max-width: 1016px) {
+  .text {
+    width: 90%;
+    margin-right: 5%;
+  }
+  .big {
+    display: none;
+  }
+  .small {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 90%;
+    margin: 0px 5% 0px 5%;
+  }
+}
+
+/* Background slideshow photos */
+.back {
+  z-index: -9999;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+/*
+If we ever need to hide the Reynolds part for fitting something
+@media only screen and (max-width: 1px) {
+  .rey {
+    display: none;
+  }
+}*/
