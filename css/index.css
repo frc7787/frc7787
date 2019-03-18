@@ -1,7 +1,17 @@
+/* Set the proportions */
+html, body{
+    width: 100%;
+    min-width: 100%;
+}
 .chunk, footer {
     width: 100%;
     min-height: 100%;
 }
+nav {
+    height: 90px;
+}
+
+/* Colors for the sections */
 .first {
     background-color: #8e1b8f;
 }
