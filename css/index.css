@@ -1,0 +1,19 @@
+.chunk, footer {
+    width: 100%;
+    height: 100%;
+}
+.first {
+    background-color: #8e1b8f;
+}
+.second {
+    background-color: #ffe67f;
+}
+.third{
+    background-color: #4169e1;
+}
+.forth {
+    background-color: #241c1c;
+}
+footer{
+    background-color: #ffffff;
+}
