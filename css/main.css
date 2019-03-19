@@ -6,11 +6,24 @@ html, body {
 }
 
 /* Navigation bar styles */
+/* Check https://dev.to/mornir/cool-css-effect-j2n for learn about the clip-path effect */
+.nav_div {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    width: 100%;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+}
+
 nav {
     height: 90px;
     max-width: 100%;
     width: 100%;
     position: fixed;
+    top: 0;
     /* Flexbox */
     display: -ms-flexbox;
     display: -webkit-flex;

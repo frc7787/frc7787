@@ -2,25 +2,26 @@
 .chunk, footer {
     width: 100%;
     min-height: 100%;
+    position: relative;
 }
 
 /* Colors for the sections */
-.first {
+.first, .first_nav {
     background-color: #4169e1;
 }
 
-.second {
+.second, .second_nav {
     background-color: #ffe67f;
 }
 
-.third{
+.third, .third_nav {
     background-color: #8e1b8f;
 }
 
-.forth {
+.forth, .forth_nav {
     background-color: #241c1c;
 }
 
-footer{
+footer, .footer_nav {
     background-color: #ffffff;
 }
