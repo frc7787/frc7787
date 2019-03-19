@@ -50,7 +50,11 @@ nav > div{
     white-space: nowrap;
 }
 
-.nav_link_div {
+.left_nav {
+    cursor: pointer;
+}
+
+.right_nav {
     width: 20%;
     display: -ms-flexbox;
     display: -webkit-flex;
