@@ -8,7 +8,7 @@ html, body {
 /* Navigation bar styles */
 nav {
     height: 90px;
-    min-width: 100%;
+    max-width: 100%;
     width: 100%;
     position: fixed;
     /* Flexbox */
@@ -28,6 +28,7 @@ nav {
     -ms-flex-align: center;
     align-items: center;
 }
+
 nav > div{
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -43,18 +44,55 @@ nav > div{
     align-items: center;
     margin: 0px 4% 0px 4%;
 }
+
 .reybots {
-    margin-left: 3%;
+    margin-left: 6%;
     white-space: nowrap;
 }
- /* unvisited link */
+
+.nav_link_div {
+    width: 20%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 .nav_link:link, .nav_link:visited, .nav_link:hover, .nav_link:active {
     color: #000;
     text-decoration: none;
     font-weight: normal;
     font-size: 2rem;
+    margin-left: 8%;
 }
+
+.nav_link:hover {
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+
+    .reybots {
+        display: none;
+    }
+
 }
   
