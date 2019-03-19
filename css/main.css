@@ -46,7 +46,7 @@ nav > div{
 }
 
 .reybots {
-    margin-left: 6%;
+    margin-left: 1.5rem;
     white-space: nowrap;
 }
 
@@ -77,7 +77,7 @@ nav > div{
     text-decoration: none;
     font-weight: normal;
     font-size: 2rem;
-    margin-left: 8%;
+    margin-left: 1.5rem;
 }
 
 .nav_link:hover {
