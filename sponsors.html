@@ -32,8 +32,9 @@
 			</div>
 			<!-- This is the part that applies backgrounds, if you want to increase the number of images create a new <img> with id 'slide' + the next number.-->
 			<div class="photos">
-				<img id="slide1" class="back" src="sponsors/Coast_capital.png" alt="Coast Capital Savings">
-				<img style="display: none;" id="slide2" class="back" src="sponsors/Redbrick_.png" alt="RedBrick">
+				<img id="slide1" class="back" src="sponsors/Prime+engineering.png" alt="Prime Engineering">
+				<img style="display: none;" id="slide2" class="back" src="sponsors/Coast_capital.png" alt="Coast Capital Savings">
+				<img style="display: none;" id="slide3" class="back" src="sponsors/Redbrick_.png" alt="RedBrick">
 			</div>
 		</div>
 		<div style="background-color: #181818;" class="down">
@@ -41,12 +42,15 @@
 				For creating a new sponsor you will need the logo of them and know the level that they are. Once you have that you must create a <div> inside .allsponsors (of the correct level) with the class .sponsor. In also need onclick="window.location.href = 'https://example.com/';" Inside that <div> there should a <img> with the class .sponsorimg (not in starter plan) and a <h3> with the name of the company.
 			-->
 			<div class="sponsorlist">
-				<!-- <div class="platinum">
+				 <div class="platinum">
 					<h2><span style="color: #e5e4e2;">Platinum</span> Sponsors</h2>
 					<div class="allsponsors">
-						
+						<div class="sponsor" onclick="window.location.href = 'http://www.primeeng.ca';">
+							<img class="sponsorimg" src="sponsors/Prime-engineering.png" alt="Prime Engineering Logo">
+							<h3>Prime Engineering</h3>
+						</div>
 					</div>
-				</div>
+				</div><!--
 				 <div class="gold">
 					<h2><span style="color: #D4AF37;">Gold</span> Sponsors</h2>
 					<div class="allsponsors">
