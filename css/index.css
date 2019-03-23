@@ -92,7 +92,7 @@ footer,
 }
 
 .first_text {
-    font-size: calc(33px + (40 - 33) * ((100vw - 940px) / (1920 - 940)));
+    font-size: calc(33px + (55 - 33) * ((100vw - 940px) / (1920 - 940)));
     margin: 0px 10% 0px 0px;
     padding: 0px 0px 0px 0px;
 }
