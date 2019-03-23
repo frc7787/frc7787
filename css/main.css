@@ -26,7 +26,7 @@ nav {
     height: 90px;
     max-width: 100%;
     width: 100%;
-    position: fixed; 
+    position: fixed;
     top: 0;
     /* Flexbox */
     display: -ms-flexbox;
@@ -110,6 +110,7 @@ nav>div {
 
 h1 {
     font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -118,4 +119,47 @@ h1 {
         display: none;
     }
 
+}
+
+/* Flex presets */
+.fl {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.fl_row {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.fl_column {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.fl_nowrap {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.fl_direction_middle {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.fl_nodirection_middle {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.fl_direction_space-around {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }

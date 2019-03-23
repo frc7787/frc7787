@@ -6,42 +6,66 @@ footer {
     position: relative;
 }
 
-.first {
+/* .first {
     height: auto;
-}
+} */
 
 .content_div {
     min-height: calc(100% - 150px);
-    padding: 100px 2.5% 50px 2.5%;
+    padding: 100px 4% 50px 4%;
 }
 
 /* Colors for the sections */
+/* 'color' sets the text color of the section while the 'background' sets the theme (sometimes in gradient) */
 .first,
 .first_nav {
     color: black;
-    background-color: #4169e1;
+    background: linear-gradient(90deg, #4169e1 66%, #3850a2 34%);
 }
 
 .second,
 .second_nav {
     color: black;
-    background-color: #ffe67f;
+    background: #ffe67f;
 }
 
 .third,
 .third_nav {
     color: black;
-    background-color: #8e1b8f;
+    background: #8e1b8f;
 }
 
 .forth,
 .forth_nav {
     color: white;
-    background-color: #241c1c;
+    background: #241c1c;
 }
 
 footer,
 .footer_nav {
     color: black;
-    background-color: #ffffff;
+    background: #ffffff;
+}
+
+/* Set the grids */
+/* About fr https://css-tricks.com/introduction-fr-css-unit/ */
+.first_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+/* Text sizes */
+/* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
+.frc_text {
+    font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (1080 - 320)));
+    line-height: 100px;
+    margin: 0px 0px 0px 0px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
 }
