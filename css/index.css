@@ -78,6 +78,10 @@ footer,
         color: black;
         background: #4169e1;
     }
+
+    .first {
+        height: auto;
+    }
 }
 
 /* Text sizes */
@@ -100,5 +104,6 @@ footer,
 @media (max-width: 940px) {
     .first_text {
         font-size: calc(23px + (30 - 23) * ((100vw - 320px) / (940 - 320)));
+        margin: 30px 10% 0px 0px;
     }
 }
