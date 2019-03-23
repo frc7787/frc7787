@@ -84,7 +84,7 @@ footer,
 /* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
 .frc_text {
     font-size: calc(50px + (150 - 50) * ((100vw - 320px) / (1920 - 320)));
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 20px 0px;
     line-height: 46px;
     white-space: nowrap;
     font-weight: bold;
@@ -92,7 +92,7 @@ footer,
 }
 
 .first_text {
-    font-size: calc(33px + (55 - 33) * ((100vw - 940px) / (1920 - 940)));
+    font-size: calc(30px + (50 - 30) * ((100vw - 940px) / (1920 - 940)));
     margin: 0px 10% 0px 0px;
     padding: 0px 0px 0px 0px;
 }
