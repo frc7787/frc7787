@@ -96,3 +96,9 @@ footer,
     margin: 0px 10% 0px 0px;
     padding: 0px 0px 0px 0px;
 }
+
+@media (max-width: 940px) {
+    .first_text {
+        font-size: calc(23px + (30 - 23) * ((100vw - 320px) / (940 - 320)));
+    }
+}
