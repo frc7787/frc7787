@@ -20,7 +20,7 @@ footer {
 .first,
 .first_nav {
     color: black;
-    background: linear-gradient(90deg, #4169e1 66%, #3850a2 34%);
+    background: linear-gradient(90deg, #4169e1 64%, #3850a2 36%);
 }
 
 .second,
@@ -58,14 +58,41 @@ footer,
     align-items: stretch;
 }
 
+@media (max-width: 940px) {
+
+    .first_image {
+        display: none;
+    }
+
+    .first_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .first,
+    .first_nav {
+        color: black;
+        background: #4169e1;
+    }
+}
+
 /* Text sizes */
 /* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
 .frc_text {
-    font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (1080 - 320)));
-    line-height: 100px;
+    font-size: calc(50px + (150 - 50) * ((100vw - 320px) / (1920 - 320)));
     margin: 0px 0px 0px 0px;
+    line-height: 46px;
     white-space: nowrap;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
-    /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
+}
+
+.first_text {
+    font-size: calc(33px + (40 - 33) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 10% 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
