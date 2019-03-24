@@ -63,6 +63,15 @@ footer,
     align-items: stretch;
 }
 
+.forth_content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
 @media (max-width: 940px) {
 
     .first_image {
@@ -148,4 +157,9 @@ footer,
     height: 100%;
     left: 0;
     top: 0;
+}
+
+.win_svg {
+    height: 100%;
+    min-height: 500px;
 }
