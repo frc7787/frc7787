@@ -6,10 +6,6 @@ footer {
     position: relative;
 }
 
-/* .first {
-    height: auto;
-} */
-
 .content_div {
     min-height: calc(100% - 150px);
     padding: 100px 4% 50px 4%;
@@ -58,6 +54,15 @@ footer,
     align-items: stretch;
 }
 
+.second_content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 0%;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
 @media (max-width: 940px) {
 
     .first_image {
@@ -86,6 +91,8 @@ footer,
 
 /* Text sizes */
 /* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
+
+/* The title */
 .frc_text {
     font-size: calc(50px + (150 - 50) * ((100vw - 320px) / (1920 - 320)));
     margin: 0px 0px 20px 0px;
@@ -95,6 +102,17 @@ footer,
     font-family: 'Oswald', sans-serif;
 }
 
+/* The other headers */
+.sub_text {
+    font-size: calc(50px + (150 - 50) * ((100vw - 320px) / (1920 - 320)));
+    margin: auto 0px 20px 0px;
+    line-height: 46px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* First description */
 .first_text {
     font-size: calc(30px + (50 - 30) * ((100vw - 940px) / (1920 - 940)));
     margin: 0px 10% 0px 0px;
@@ -105,5 +123,7 @@ footer,
     .first_text {
         font-size: calc(23px + (30 - 23) * ((100vw - 320px) / (940 - 320)));
         margin: 30px 10% 0px 0px;
+        text-align: justify;
+        text-justify: inter-word;
     }
 }
