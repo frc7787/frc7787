@@ -19,11 +19,14 @@ body {
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
     pointer-events: none;
+    z-index: 418; /* I’m a teapot */
 }
 
 nav {
     pointer-events: auto;
+    min-height: 90px;
     height: 90px;
+    max-height: 90px;
     max-width: 100%;
     width: 100%;
     position: fixed;
