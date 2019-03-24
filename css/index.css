@@ -96,6 +96,16 @@ footer,
     .first {
         height: auto;
     }
+
+    .second_content {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
 }
 
 /* Text sizes */
@@ -104,7 +114,7 @@ footer,
 /* The title */
 .frc_text {
     font-size: calc(50px + (150 - 50) * ((100vw - 320px) / (1920 - 320)));
-    margin: 3% 0px 20px 0px;
+    margin: 5% 0px 20px 0px;
     line-height: 46px;
     white-space: nowrap;
     font-weight: bold;
@@ -133,12 +143,23 @@ footer,
     margin: 0px 0px 7% 0px;
 }
 
+/* Margin for the button */
+.but_mar {
+    margin-top: 11%;
+}
+
 @media (max-width: 940px) {
     .first_text {
         font-size: calc(23px + (30 - 23) * ((100vw - 320px) / (940 - 320)));
         margin: 30px 10% 0px 0px;
-        text-align: justify;
-        text-justify: inter-word;
+    }
+
+    .second_title {
+        margin: 0px 0px 6% 0px;
+    }
+
+    .but_mar {
+        margin-top: 3%;
     }
 }
 
