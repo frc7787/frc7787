@@ -104,9 +104,9 @@ footer,
 
 /* The other headers */
 .sub_text {
-    font-size: calc(50px + (150 - 50) * ((100vw - 320px) / (1920 - 320)));
-    margin: auto 0px 20px 0px;
-    line-height: 46px;
+    font-size: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+    margin: 0px 0px 0px 0px;
+    line-height: 90px;
     white-space: nowrap;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
@@ -115,8 +115,7 @@ footer,
 /* First description */
 .first_text {
     font-size: calc(30px + (50 - 30) * ((100vw - 940px) / (1920 - 940)));
-    margin: 0px 10% 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 @media (max-width: 940px) {
