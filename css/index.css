@@ -118,6 +118,12 @@ footer,
     margin: 0px 0px 0px 0px;
 }
 
+/* Second description */
+.second_text {
+    font-size: calc(24px + (36 - 24) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 0px 0px;
+}
+
 @media (max-width: 940px) {
     .first_text {
         font-size: calc(23px + (30 - 23) * ((100vw - 320px) / (940 - 320)));
