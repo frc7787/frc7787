@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
 
+    <!-- Polifylls -->
+    
+
     <!-- Importing javascript -->
     <script src="js/instagram_deleter.js"></script>
 </head>
@@ -90,20 +93,36 @@
             </nav>
         </div>
         <div class="content_div third_content">
-            <div>
+            <div class="fl fl_column fl_direction_space-around">
                 <h2 class="sub_text">Connect with us</h2>
+                <p class="small_text">We love social media! We publish everything there, even our troubles. If you want
+                    to follow our adventures check our Instagram and Facebook.</p>
+                <p class="small_text">We also publish our code in Github. Yes, this website and our robot code are open
+                    source, check it out.</p>
+                <div class="fl_inline fl_row fl_direction_space-around fl_wrap">
+                    <a class="button b_insta small_text" href="https://www.instagram.com/reybots7787"><img
+                            class="but_social" src="img/assets/instagram.svg" alt="Instagram"></a>
+                    <a class="button b_face small_text" href="https://www.facebook.com/reybots7787"><img
+                            class="but_social" src="img/assets/facebook.svg" alt="Facebook"></img></a>
+                    <a class="button b_git small_text" href="https://github.com/reybots7787"><img class="but_social"
+                            src="img/assets/github.svg" alt="Github"></img></a>
+                </div>
             </div>
             <div>
                 <div id="gallery" class="insta_gallery fl fl_nodirection_middle fl_direction_middle">
                     <!-- InstaWidget -->
                     <a href="https://instawidget.net/v/user/reybots7787"
                         id="link-6a80c686eb04afa9cb0ad1cb9b92bfed33a936cc1b3a19a883a062428bcc947f">@reybots7787</a>
-                    <script
-                        src="https://instawidget.net/js/instawidget.js?u=6a80c686eb04afa9cb0ad1cb9b92bfed33a936cc1b3a19a883a062428bcc947f&width=100%">
-                    </script>
+                    <script src="https://instawidget.net/js/instawidget.js?u=6a80c686eb04afa9cb0ad1cb9b92bfed33a936cc1b3a19a883a062428bcc947f&width=100%"></script>
                 </div>
                 <div id="big_picture">
-
+                    <picture style="display: none; width: 100%; height: 100%;" id="extra_photo"
+                        class="fl fl_nodirection_middle fl_direction_middle">
+                        <source style="width: 100%; height: 100%;" srcset="img/assets/team_photo.webp" type="image/webp"
+                            alt="Photo of the team">
+                        <source style="width: 100%; height: 100%;" srcset="img/assets/team_photo.jpg" type="image/jpeg"
+                            alt="Photo of the team">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -151,6 +170,9 @@
         /* Separated to reduce the first load of fonts */
         @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700');
     </style>
+    <!-- Instagram wall -->
+    
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
 </body>
 
 </html>

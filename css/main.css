@@ -133,6 +133,12 @@ h1 {
     display: flex;
 }
 
+.fl_inline {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
 .fl_row {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -149,6 +155,12 @@ h1 {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+}
+
+.fl_wrap {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .fl_direction_middle {
@@ -178,12 +190,34 @@ h1 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: calc(20px + (24 - 20) * ((100vw - 940px) / (1920 - 940)));
     margin: 4px 2px;
     cursor: pointer;
 }
 
+.but_social {
+    height: calc(24px + (28 - 24) * ((100vw - 940px) / (1920 - 940)));
+    width: calc(24px + (28 - 24) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
 .b_blue {
     background-color: #3f51b5;
+    color: white;
+}
+
+.b_face {
+    background-color: #3B5998;
+    color: white;
+}
+
+.b_insta {
+    background-color: #E4405F;
+    color: white;
+}
+
+.b_git {
+    background-color: #181717;
     color: white;
 }

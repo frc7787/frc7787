@@ -7,8 +7,8 @@ footer {
 }
 
 .content_div {
-    min-height: calc(100% - 150px);
-    padding: 100px 4% 50px 4%;
+    min-height: calc(100% - 300px);
+    padding: 150px 4% 150px 4%;
 }
 
 /* Colors for the sections */
@@ -115,6 +115,15 @@ footer,
         justify-items: stretch;
         align-items: stretch;
     }
+
+    .third_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 2.5%;
+        justify-items: stretch;
+        align-items: stretch;
+    }
 }
 
 @media (orientation: portrait) {
@@ -136,7 +145,7 @@ footer,
 /* The title */
 .frc_text {
     font-size: calc(50px + (150 - 50) * ((100vw - 320px) / (1920 - 320)));
-    margin: 5% 0px 20px 0px;
+    margin: 1% 0px 20px 0px;
     line-height: 46px;
     white-space: nowrap;
     font-weight: bold;
