@@ -137,6 +137,11 @@ footer,
     .award_photo {
         display: none;
     }
+
+    .award_list {
+        max-width: 96%;
+        width: 96%;
+    }
 }
 
 /* @media (orientation: portrait) {
