@@ -139,7 +139,7 @@ footer,
     }
 }
 
-@media (orientation: portrait) {
+/* @media (orientation: portrait) {
     
     .second_content {
         display: grid;
@@ -150,7 +150,7 @@ footer,
         justify-items: stretch;
         align-items: stretch;
     }
-}
+} */
 
 /* Text sizes */
 /* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
