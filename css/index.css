@@ -124,6 +124,19 @@ footer,
         justify-items: stretch;
         align-items: stretch;
     }
+
+    .forth_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .award_photo {
+        display: none;
+    }
 }
 
 @media (orientation: portrait) {
@@ -222,7 +235,7 @@ footer,
     height: 100%;
 }
 
-/* Award section from chunk 4 */
+/* Award list from chunk 4 */
 .award_list {
     list-style-type: none;
     padding-left: 0px;
