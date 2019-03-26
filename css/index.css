@@ -144,19 +144,6 @@ footer,
     }
 }
 
-/* @media (orientation: portrait) {
-    
-    .second_content {
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: none;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        justify-items: stretch;
-        align-items: stretch;
-    }
-} */
-
 /* Text sizes */
 /* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
 
