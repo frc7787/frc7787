@@ -7,8 +7,8 @@ footer {
 }
 
 .content_div {
-    min-height: calc(100% - 300px);
-    padding: 150px 4% 150px 4%;
+    min-height: calc(100% - 250px);
+    padding: 100px 4% 150px 4%;
 }
 
 /* Colors for the sections */
@@ -74,7 +74,7 @@ footer,
 
 .forth_content {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 3fr 2fr;
     grid-column-gap: 5%;
     grid-row-gap: 0px;
     justify-items: stretch;
@@ -213,11 +213,101 @@ footer,
 
 .win_svg {
     height: 100%;
-    min-height: 500px;
+    width: 100%;
 }
 
 /* The system works terrible if you start the page small and later you maximize */
 .insta_gallery {
     width: 100%;
     height: 100%;
+}
+
+/* Award section from chunk 4 */
+.award_list {
+    list-style-type: none;
+    padding-left: 0px;
+    width: 100%;
+}
+
+.award_list > li {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    margin: 0% 0% 3% 0%;
+    /* I use pixels as the images are adapted to a specific size */
+    padding: 5px 1% 5px 1%;
+    height: 50px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #3850a2;
+    cursor: pointer;
+}
+
+.award_title {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.award_title > img {
+    height: 50px;
+    width: 50px;
+}
+
+.award_desc {
+    margin: initial;
+    margin: 0px 20px 0px 5px;
+    color: black;
+    white-space: nowrap;
+}
+
+.award_info {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.award_year {
+    display: inline;
+    color: #817f8b;
+    padding: 0px 1% 0px 5px;
+    margin: 0px 0px 0px 0px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
