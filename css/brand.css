@@ -1,0 +1,99 @@
+/* Colors for the sections */
+/* 'color' sets the text color of the section while the 'background' sets the theme (sometimes in gradient) */
+.houston,
+.houston_nav {
+    color: black;
+    background: #F1B300;
+}
+
+.pacific,
+.pacific_nav {
+    color: black;
+    background: #78BD70;
+}
+
+/* Set the grids */
+/* About fr https://css-tricks.com/introduction-fr-css-unit/ */
+.right_image_content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.left_image_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+@media (max-width: 940px) {
+
+    .right_image_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .left_image_content {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .compe_photo {
+        margin: 40px 0px 40px 0px;
+    }
+}
+
+/* Text sizes */
+/* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
+
+/* The other headers */
+.sub_text {
+    font-size: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+    margin: 0px 0px 0% 0px;
+    line-height: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* The other descriptions */
+.small_text {
+    font-size: calc(20px + (24 - 20) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 7% 0px;
+}
+
+/* Margin for the button */
+.but_mar {
+    margin-top: 11%;
+}
+
+.compe_title {
+    margin-bottom: 10%;
+}
+
+.compete_year {
+    float: left;
+    font-size: calc(16px + (20 - 16) * ((100vw - 940px) / (1920 - 940)));
+    margin: 15px 0px 0px 0px;
+}
+
+@media (max-width: 940px) {
+
+    .but_mar {
+        margin-top: 3%;
+    }
+}
