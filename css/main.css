@@ -181,6 +181,12 @@ h1 {
     justify-content: space-around;
 }
 
+.fl_direction_space_between {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
 /* Button presets */
 /* From https://www.w3schools.com/css/css3_buttons.asp */
 /* Create a div with class="fl fl_row fl_direction_middle" and insert an <a> in class .button & the color */

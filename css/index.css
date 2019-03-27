@@ -81,6 +81,21 @@ footer,
     align-items: stretch;
 }
 
+.footer_content {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
 @media (max-width: 940px) {
 
     .first_image {
@@ -150,7 +165,7 @@ footer,
 /* The title */
 .frc_text {
     font-size: calc(50px + (150 - 50) * ((100vw - 320px) / (1920 - 320)));
-    margin: 1% 0px 20px 0px;
+    margin: 3% 0px 20px 0px;
     line-height: 46px;
     white-space: nowrap;
     font-weight: bold;
@@ -182,6 +197,32 @@ footer,
 /* Margin for the button */
 .but_mar {
     margin-top: 11%;
+}
+
+/* Footer titles */
+h3 {
+    font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+    margin: 0px 0px 0px 0px;
+    line-height: 90px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer_column > a:link,
+.footer_column > a:visited,
+.footer_column > a:hover,
+.footer_column > a:active {
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: calc(16px + (18 - 16) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 2rem 0px;
+}
+
+.footer_column > a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 940px) {
@@ -315,4 +356,8 @@ footer,
     line-height: 20px;
     font-size: 15px;
     font-weight: bold;
+}
+
+.footer_column {
+    margin-right: 100px;
 }
