@@ -1,0 +1,177 @@
+/* Set the proportions */
+.chunk,
+footer {
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+}
+
+.content_div {
+    min-height: calc(100% - 250px);
+    padding: 100px 4% 150px 4%;
+}
+
+/* Colors for the sections */
+/* 'color' sets the text color of the section while the 'background' sets the theme (sometimes in gradient) */
+.first,
+.first_nav {
+    color: black;
+    background: linear-gradient(90deg, #4169e1 64%, #3850a2 36%);
+}
+
+.pacific,
+.pacific_nav {
+    color: black;
+    background: #78BD70;
+}
+
+footer,
+.footer_nav {
+    color: black;
+    background: #ffffff;
+}
+
+/* Set the grids */
+/* About fr https://css-tricks.com/introduction-fr-css-unit/ */
+.first_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.pacific_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.footer_content {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+@media (max-width: 940px) {
+
+    .first_image {
+        display: none;
+    }
+
+    .first_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .first,
+    .first_nav {
+        color: black;
+        background: #4169e1;
+    }
+
+    .first {
+        height: auto;
+    }
+
+    .pacific_content {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .compe_photo {
+        margin-bottom: 40px;
+    }
+}
+
+/* Text sizes */
+/* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
+
+/* The other headers */
+.sub_text {
+    font-size: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+    margin: 0px 0px 0% 0px;
+    line-height: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* The other descriptions */
+.small_text {
+    font-size: calc(20px + (24 - 20) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 7% 0px;
+}
+
+/* Margin for the button */
+.but_mar {
+    margin-top: 11%;
+}
+
+.compe_title {
+    margin-bottom: 10%;
+}
+
+.compete_year {
+    float: left;
+    font-size: calc(16px + (20 - 16) * ((100vw - 940px) / (1920 - 940)));
+    margin: 15px 0px 0px 0px;
+}
+
+/* Footer titles */
+h3 {
+    font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+    margin: 0px 0px 0px 0px;
+    line-height: 90px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer_column > a:link,
+.footer_column > a:visited,
+.footer_column > a:hover,
+.footer_column > a:active {
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: calc(16px + (18 - 16) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 2rem 0px;
+}
+
+.footer_column > a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 940px) {
+
+    .but_mar {
+        margin-top: 3%;
+    }
+}
+
+.footer_column {
+    margin-right: 100px;
+}
