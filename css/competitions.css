@@ -1,9 +1,9 @@
 /* Colors for the sections */
 /* 'color' sets the text color of the section while the 'background' sets the theme (sometimes in gradient) */
-.first,
-.first_nav {
+.houston,
+.houston_nav {
     color: black;
-    background: linear-gradient(90deg, #4169e1 64%, #3850a2 36%);
+    background: #F1B300;
 }
 
 .pacific,
@@ -14,16 +14,16 @@
 
 /* Set the grids */
 /* About fr https://css-tricks.com/introduction-fr-css-unit/ */
-.first_content {
+.right_image_content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-column-gap: 2.5%;
     grid-row-gap: 0px;
     justify-items: stretch;
     align-items: stretch;
 }
 
-.pacific_content {
+.left_image_content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 2.5%;
@@ -34,11 +34,7 @@
 
 @media (max-width: 940px) {
 
-    .first_image {
-        display: none;
-    }
-
-    .first_content {
+    .right_image_content {
         display: grid;
         grid-template-columns: auto;
         grid-column-gap: 0px;
@@ -47,17 +43,7 @@
         align-items: stretch;
     }
 
-    .first,
-    .first_nav {
-        color: black;
-        background: #4169e1;
-    }
-
-    .first {
-        height: auto;
-    }
-
-    .pacific_content {
+    .left_image_content {
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: none;
@@ -68,7 +54,7 @@
     }
 
     .compe_photo {
-        margin-bottom: 40px;
+        margin: 40px 0px 40px 0px;
     }
 }
 
