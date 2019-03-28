@@ -6,17 +6,17 @@
     background: #fbd743;
 }
 
-.pacific,
-.pacific_nav {
+.guidelines,
+.guidelines_nav {
     color: black;
-    background: #78BD70;
+    background: #f0f0f0;
 }
 
 /* Set the grids */
 /* About fr https://css-tricks.com/introduction-fr-css-unit/ */
 .left_image_content {
     display: grid;
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 2fr 3fr;
     grid-column-gap: 2.5%;
     grid-row-gap: 0px;
     justify-items: stretch;
@@ -35,13 +35,6 @@
         align-items: stretch;
     }
 
-    .first_image {
-        display: none;
-    }
-
-    .compe_photo {
-        margin: 40px 0px 40px 0px;
-    }
 }
 
 /* Text sizes */
@@ -50,7 +43,7 @@
 /* The other headers */
 .sub_text {
     font-size: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
-    margin: 0px 0px 0% 0px;
+    margin: 0px 0px 30px 0px;
     line-height: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
@@ -60,21 +53,6 @@
 .small_text {
     font-size: calc(20px + (24 - 20) * ((100vw - 940px) / (1920 - 940)));
     margin: 0px 0px 7% 0px;
-}
-
-/* Margin for the button */
-.but_mar {
-    margin-top: 11%;
-}
-
-.compe_title {
-    margin-bottom: 10%;
-}
-
-.compete_year {
-    float: left;
-    font-size: calc(16px + (20 - 16) * ((100vw - 940px) / (1920 - 940)));
-    margin: 15px 0px 0px 0px;
 }
 
 .referrer:link,
@@ -91,9 +69,22 @@
     text-decoration: underline;
 }
 
-@media (max-width: 940px) {
+/* Guideline box style */ 
+.guideline_box {
+    width: 240px;
+    min-height: 200px;
+    border-color: #e8e8e8;
+    border-radius: 10px 10px 8px 8px;
+    margin: 2% 5% 3% 0px;
+}
 
-    .but_mar {
-        margin-top: 3%;
-    }
+.guideline_photo {
+    width: 240px;
+    height: 200px;
+    border-radius: 8px 8px 10px 10px;
+}
+
+.rule p, .rule b {
+    text-align: center;
+    font-size: calc(16px + (18 - 16) * ((100vw - 940px) / (1920 - 940)));
 }
