@@ -71,7 +71,7 @@
     color: black;
     text-decoration: none;
     margin-top: 16px;
-    font-size: calc(10px + (14 - 10) * ((100vw - 940px) / (1920 - 940)));
+    font-size: calc(12px + (16 - 12) * ((100vw - 940px) / (1920 - 940)));
 }
 
 .referrer:hover {
