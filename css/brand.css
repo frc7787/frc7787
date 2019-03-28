@@ -138,6 +138,7 @@
 .download_box {
     display: block;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 .download_hover,
