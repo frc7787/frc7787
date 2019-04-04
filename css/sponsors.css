@@ -15,8 +15,8 @@
 /* Set the grids */
 /* About fr https://css-tricks.com/introduction-fr-css-unit/ */
 .content_div {
-    min-height: calc(100% - 50px);
-    padding: 50px 0% 0px 0%;
+    min-height: calc(100% - 70px);
+    padding: 70px 0% 0px 0%;
 }
 
 .content_div h3 {
@@ -52,7 +52,7 @@
         align-items: stretch;
     }
 
-    .left_image_content {
+    .platinum_content {
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: none;
@@ -139,4 +139,11 @@
 
 .button {
     margin: initial;
+}
+
+@media (max-width: 700px) {
+    .platinum_sponsor_logo {
+        padding-right: 5%;
+        margin-bottom: 5%;
+    }
 }
