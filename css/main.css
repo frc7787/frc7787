@@ -286,6 +286,11 @@ h3 {
     color: black;
 }
 
+.b_white {
+    background-color: #ffffff;
+    color: black;
+}
+
 .b_face {
     background-color: #3B5998;
     color: white;

@@ -1,0 +1,142 @@
+/* Colors for the sections */
+/* 'color' sets the text color of the section while the 'background' sets the theme (sometimes in gradient) */
+.platinum,
+.platinum_nav {
+    color: black;
+    background: #e5e4e2;
+}
+
+.bronze,
+.bronze_nav {
+    color: black;
+    background: #f3a252;
+}
+
+/* Set the grids */
+/* About fr https://css-tricks.com/introduction-fr-css-unit/ */
+.content_div {
+    min-height: calc(100% - 50px);
+    padding: 50px 0% 0px 0%;
+}
+
+.content_div h3 {
+    padding-left: 4%;
+}
+
+.bronze_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.platinum_content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 0%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+@media (max-width: 700px) {
+
+    .bronze_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .left_image_content {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .compe_photo {
+        margin: 40px 0px 40px 0px;
+    }
+}
+
+/* Text sizes */
+/* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
+
+/* The other headers */
+.sub_text {
+    font-size: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+    margin: 0px 0px 0% 0px;
+    line-height: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* The other descriptions */
+.small_text {
+    font-size: calc(20px + (24 - 20) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 7% 0px;
+}
+
+/* Margin for the button */
+.but_mar {
+    margin-top: 11%;
+}
+
+.compe_title {
+    margin-bottom: 10%;
+}
+
+.compete_year {
+    float: left;
+    font-size: calc(16px + (20 - 16) * ((100vw - 940px) / (1920 - 940)));
+    margin: 15px 0px 0px 0px;
+}
+
+@media (max-width: 940px) {
+
+    .but_mar {
+        margin-top: 3%;
+    }
+}
+
+.sponsor_box {
+    padding: 50px 15% 40px 15%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sponsor_logo {
+    margin-bottom: 30px;
+}
+
+.platinum_sponsor_logo {
+    padding-left: 5%;
+}
+
+.platinum_sponsor {
+    padding: 100px 0px 100px 0px;
+}
+
+.platinum_desc {
+    padding: 0px 5% 0px 5%;
+}
+
+.button {
+    margin: initial;
+}
