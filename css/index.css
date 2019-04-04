@@ -1,0 +1,300 @@
+/* Colors for the sections */
+/* 'color' sets the text color of the section while the 'background' sets the theme (sometimes in gradient) */
+.first,
+.first_nav {
+    color: black;
+    background: linear-gradient(90deg, #4169e1 64%, #3850a2 36%);
+}
+
+.second,
+.second_nav {
+    color: black;
+    background: #ffe67f;
+}
+
+.third,
+.third_nav {
+    color: black;
+    background: #8e1b8f;
+}
+
+.forth,
+.forth_nav {
+    color: white;
+    background: #241c1c;
+}
+
+/* Set the grids */
+/* About fr https://css-tricks.com/introduction-fr-css-unit/ */
+.first_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.second_content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 0%;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.third_content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.forth_content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+
+@media (max-width: 940px) {
+
+    .first_image {
+        display: none;
+    }
+
+    .first_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .first,
+    .first_nav {
+        color: black;
+        background: #4169e1;
+    }
+
+    .first {
+        height: auto;
+    }
+
+    .second_content {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .third_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 2.5%;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .forth_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .award_photo {
+        display: none;
+    }
+
+    .award_list {
+        max-width: 96%;
+        width: 96%;
+    }
+}
+
+/* Text sizes */
+/* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
+
+/* The title */
+.frc_text {
+    font-size: calc(50px + (150 - 50) * ((100vw - 320px) / (1920 - 320)));
+    margin: 3% 0px 20px 0px;
+    line-height: 46px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* The other headers */
+.sub_text {
+    font-size: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+    margin: 0px 0px 10% 0px;
+    line-height: 90px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* First description */
+.first_text {
+    font-size: calc(30px + (50 - 30) * ((100vw - 940px) / (1920 - 940)));
+    margin: 5% 0px 0px 0px;
+}
+
+/* The other descriptions */
+.small_text {
+    font-size: calc(20px + (24 - 20) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 7% 0px;
+}
+
+/* Margin for the button */
+.but_mar {
+    margin-top: 11%;
+}
+
+@media (max-width: 940px) {
+    .first_text {
+        font-size: calc(23px + (30 - 23) * ((100vw - 320px) / (940 - 320)));
+        margin: 30px 10% 0px 0px;
+    }
+
+    .second_title {
+        margin: 2% 0px 6% 0px;
+    }
+
+    .but_mar {
+        margin-top: 3%;
+    }
+}
+
+
+/* Youtube player that mantains 16:9 https://stackoverflow.com/a/35153397 */
+.youtube {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56%;
+}
+
+.youtube iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.win_svg {
+    height: 100%;
+    width: 100%;
+}
+
+/* The system works terrible if you start the page small and later you maximize */
+.insta_gallery {
+    width: 100%;
+    height: 100%;
+}
+
+/* Award list from chunk 4 */
+.award_list {
+    list-style-type: none;
+    padding-left: 0px;
+    width: 100%;
+}
+
+.award_list > li {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    margin: 0% 0% 3% 0%;
+    /* I use pixels as the images are adapted to a specific size */
+    padding: 5px 1% 5px 1%;
+    height: 50px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #3850a2;
+    cursor: pointer;
+}
+
+.award_title {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.award_title > img {
+    height: 50px;
+    width: 50px;
+}
+
+.award_desc {
+    margin: initial;
+    margin: 0px 20px 0px 5px;
+    color: black;
+    white-space: nowrap;
+}
+
+.award_info {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.award_year {
+    display: inline;
+    color: #817f8b;
+    padding: 0px 1% 0px 5px;
+    margin: 0px 0px 0px 0px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}

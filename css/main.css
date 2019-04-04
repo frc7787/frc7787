@@ -1,0 +1,307 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+}
+
+.chunk,
+footer {
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+}
+
+.content_div {
+    min-height: calc(100% - 250px);
+    padding: 100px 4% 150px 4%;
+}
+
+/*------------------------ Navigation bar ---------------------------*/
+/* Check https://dev.to/mornir/cool-css-effect-j2n for learn about the clip-path effect */
+/* Check https://dev.to/mornir/comment/9iea for learning about pointer-events */
+.nav_div {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    width: 100%;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+    pointer-events: none;
+    z-index: 418; /* I’m a teapot */
+}
+
+nav {
+    pointer-events: auto;
+    min-height: 90px;
+    height: 90px;
+    max-height: 90px;
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    /* Flexbox */
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+nav>div {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0px 4% 0px 4%;
+}
+
+.reybots {
+    margin-left: 1.5rem;
+    white-space: nowrap;
+}
+
+.left_nav {
+    cursor: pointer;
+}
+
+.right_nav {
+    width: 20%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav_link:link,
+.nav_link:visited,
+.nav_link:hover,
+.nav_link:active {
+    color: inherit;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (max-width: 600px) {
+
+    .reybots {
+        display: none;
+    }
+
+}
+
+/* ------------------------- Footer -------------------------- */
+
+footer,
+.footer_nav {
+    color: black;
+    background: #ffffff;
+}
+
+.footer_content {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+h3 {
+    font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+    margin: 0px 0px 0px 0px;
+    line-height: 90px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer_column > a:link,
+.footer_column > a:visited,
+.footer_column > a:hover,
+.footer_column > a:active {
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: calc(16px + (18 - 16) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 2rem 0px;
+}
+
+.footer_column > a:hover {
+    text-decoration: underline;
+}
+
+.footer_column {
+    margin-right: 100px;
+}
+
+/* ------------------------- PRESETS ------------------------- */
+/* Flex presets */
+.fl {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.fl_inline {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
+.fl_row {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.fl_column {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.fl_nowrap {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.fl_wrap {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.fl_direction_middle {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.fl_nodirection_middle {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.fl_direction_space-around {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.fl_direction_space_between {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+/*----------------------------Button presets--------------------------*/
+/* From https://www.w3schools.com/css/css3_buttons.asp */
+/* Create a div with class="fl fl_row fl_direction_middle" and insert an <a> in class .button & the color */
+.button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: calc(20px + (24 - 20) * ((100vw - 940px) / (1920 - 940)));
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.but_social {
+    height: calc(24px + (28 - 24) * ((100vw - 940px) / (1920 - 940)));
+    width: calc(24px + (28 - 24) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.b_blue {
+    background-color: #3f51b5;
+    color: white;
+}
+
+.b_purple {
+    background-color: #7400f1;
+    color: white;
+}
+
+.b_clay {
+    background-color: #bd7078;
+    color: black;
+}
+
+.b_white {
+    background-color: #ffffff;
+    color: black;
+}
+
+.b_face {
+    background-color: #3B5998;
+    color: white;
+}
+
+.b_insta {
+    background-color: #E4405F;
+    color: white;
+}
+
+.b_git {
+    background-color: #181717;
+    color: white;
+}

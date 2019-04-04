@@ -1,97 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link rel="shortcut icon" href="img/bannerless.png">
-		<meta charset="utf-8">
-		<meta lang="en-ca">
-		<meta name="viewport" content="width=device-width">
-		<meta name="keywords" content="Reybots, Robotics, Reynolds, FIRST, frc, 7787">
-		<meta name="description" content="The official site of the Reynolds Reybots">
-		<meta name="author" content="Connor & Markel">
-		<title>Reynolds Reybots</title>
-		<link rel="canonical" href="https://frc7787.ca/">
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="css/sponsors.css">
-		<!-- JQUery from Google -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	</head>
-	
-	<body>
-		<div class="top">
-			<div class="nav">
-				<div class="titles">
-					<img class="logo" src="img/logo.png">
-					<!-- <h1><span class="rey">Reynolds </span>Reybots</h1> -->
-				</div>
-				<!-- Menu bar -->
-				<div class="topnav">
-					<a href="index.html">Home</a>
-					<a class="active" href="#">Sponsors</a>
-					<a href="contact.html">✉</a>
-				</div>
-			</div>
-			<!-- This is the part that applies backgrounds, if you want to increase the number of images create a new <img> with id 'slide' + the next number.-->
-			<div class="photos">
-				<img id="slide1" class="back" src="sponsors/Prime+engineering.png" alt="Prime Engineering">
-				<img style="display: none;" id="slide2" class="back" src="sponsors/Coast_capital.png" alt="Coast Capital Savings">
-				<img style="display: none;" id="slide3" class="back" src="sponsors/Redbrick_.png" alt="RedBrick">
-			</div>
-		</div>
-		<div style="background-color: #181818;" class="down">
-			<!-- HOW TO ADD NEW SPONSORS!!!
-				For creating a new sponsor you will need the logo of them and know the level that they are. Once you have that you must create a <div> inside .allsponsors (of the correct level) with the class .sponsor. In also need onclick="window.location.href = 'https://example.com/';" Inside that <div> there should a <img> with the class .sponsorimg (not in starter plan) and a <h3> with the name of the company.
-			-->
-			<div class="sponsorlist">
-				 <div class="platinum">
-					<h2><span style="color: #e5e4e2;">Platinum</span> Sponsors</h2>
-					<div class="allsponsors">
-						<div class="sponsor" onclick="window.location.href = 'http://www.primeeng.ca';">
-							<img class="sponsorimg" src="sponsors/Prime-engineering.png" alt="Prime Engineering Logo">
-							<h3>Prime Engineering</h3>
-						</div>
-					</div>
-				</div><!--
-				 <div class="gold">
-					<h2><span style="color: #D4AF37;">Gold</span> Sponsors</h2>
-					<div class="allsponsors">
-						
-					</div>
-				</div>
-				<div class="silver">
-					<h2><span style="color: #C0C0C0;">Silver</span> Sponsors</h2>
-					<div class="allsponsors">
-						
-					</div>
-				</div> -->
-				<div class="bronze">
-					<h2><span style="color: #cd7f32;">Bronze</span> Sponsors</h2>
-					<div class="allsponsors">
-						<div class="sponsor" onclick="window.location.href = 'https://www.coastcapitalsavings.com/';">
-							<img class="sponsorimg" src="sponsors/Coast+Capital.png" alt="Coast Capital Savings Logo">
-							<h3>Coast Capital Savings</h3>
-						</div>
-						<div class="sponsor" onclick="window.location.href = 'https://rdbrck.com/';">
-							<img class="sponsorimg" src="sponsors/Redbrick+.png" alt="Readbrick Logo">
-							<h3>Redbrick</h3>
-						</div>
-					</div>
-				</div>
-				<div class="starter">
-					<h2>Starter Sponsors</h2>
-					<div class="allsponsors">
-						<div class="sponsor" onclick="window.location.href = 'http://www.dynecurb.com/';">
-							<h3>Dynecurb</h3>
-						</div>
-					</div>
-					<div class="allsponsors">
-						<div class="sponsor" onclick="window.location.href = 'http://szechuanonline.com';">
-							<h3>Szechuan Restaurant</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-	<!-- <script src="js/script.js"></script> -->
-	<script src="js/slideshow.js"></script>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- Seo thanks to https://stackoverflow.com/a/43154489/9547841 -->
+    <title>Sponsors - Reynolds Reybots</title>
+    <meta name="description" content="Learn about the sponsors that help Reynolds Reybots continue!">
+    <!-- Max 155 characters -->
+    <meta property="og:title" content="Sponsors - Reynolds Reybots" /> <!-- Max 35 characters -->
+    <meta property="og:url" content="https://frc7787.ca/sponsors.html" />
+    <meta property="og:description" content="Learn about the sponsors that help Reynolds Reybots continue!">
+    <!-- Max 65 characters -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <!-- Website image-->
+    <meta property="og:image" content="//frc7787.ca/img/seo/index.jpg">
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:alt" content="Reybots logo in a blue background" />
+
+    <!-- Favicon https://stackoverflow.com/a/43154399/9547841 -->
+    <link rel="shortcut icon" href="/img/seo/favicon/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/img/seo/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/img/seo/favicon/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/img/seo/favicon/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/seo/favicon/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/img/seo/favicon/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/seo/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/seo/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" href="/img/seo/favicon/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/seo/favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/seo/favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/seo/favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/seo/favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/seo/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/seo/favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/seo/favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/seo/favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#4169e1">
+    <meta name="msapplication-TileImage" content="/img/seo/favicon/favicon-144.png">
+    <meta name="msapplication-config" content="/img/seo/favicon/browserconfig.xml">
+
+    <!-- Importing css-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sponsors.css">
+
+    <!-- Polifylls -->
+
+
+    <!-- Importing javascript -->
+    <script src="//instant.page/1.2.2" type="module"
+        integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+</head>
+
+<body data-instant-allow-query-string data-instant-allow-external-links>
+    <section class="chunk platinum">
+        <div class="nav_div">
+            <nav class="platinum_nav">
+                <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
+                    <img src="img/logo/bannerless.webp" width="60px" height="60px" alt="">
+                    <h1 class="reybots">Reynolds Reybots</h1>
+                </div>
+                <div class="right_nav">
+                    <a class="nav_link" href="competitions.html">Competitions</a>
+                    <a class="nav_link" href="sponsors.html">Sponsors</a>
+                </div>
+            </nav>
+        </div>
+        <div class="content_div">
+            <h3>Platinum sponsors</h3>
+            <div class="platinum_sponsor" style="background-color: #1dafd8;">
+                <div class="platinum_content">
+                    <div class="platinum_sponsor_logo fl fl_column fl_direction_middle">
+                        <img src="img/sponsors/prime-engineering.svg" width="100%" alt="Prime Engineering logo">
+                    </div>
+                    <div style="color: white;" class="platinum_desc fl fl_column fl_direction_middle">
+                        <p class="small_text">Prime Engineering is a full service electrical engineering firm specializing in power system design and commissioning.</p>
+                        <p class="small_text">They offer their clients design-build services for complete electrical turnkey solutions.</p>
+                        <div class="fl fl_row fl_direction_middle">
+                            <a class="button b_white small_text" href="http://www.primeeng.ca/">Check it out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="chunk bronze">
+        <div class="nav_div">
+            <nav class="bronze_nav">
+                <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
+                    <img src="img/logo/fullbig.webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="right_nav">
+                    <a class="nav_link" href="competitions.html">Competitions</a>
+                    <a class="nav_link" href="sponsors.html">Sponsors</a>
+                </div>
+            </nav>
+        </div>
+        <div class="content_div">
+            <h3>Bronze sponsors</h3>
+            <div class="bronze_content">
+                <div onclick="window.location = 'https://www.coastcapitalsavings.com/';" class="sponsor_box"
+                    style="background-color:#0067c6;">
+                    <img class="sponsor_logo" src="img/sponsors/ccs.svg" width="100%" alt="Coast Capital Savings Logo">
+                    <h3 class="sponsor_text" style="color: white;">Coast Capital Savings</h3>
+                </div>
+                <div onclick="window.location = 'https://rdbrck.com/';" class="sponsor_box"
+                    style="background-color:#343540;">
+                    <img class="sponsor_logo" src="img/sponsors/redbrick.png" width="100%" alt="Redbrick Logo">
+                    <h3 class="sponsor_text" style="color: white;">Redbrick</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="nav_div">
+            <nav class="footer_nav">
+                <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
+                    <img src="img/logo/fullbig.webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="right_nav">
+                    <a class="nav_link" href="competitions.html">Competitions</a>
+                    <a class="nav_link" href="sponsors.html">Sponsors</a>
+                </div>
+            </nav>
+        </div>
+        <div class="content_div footer_content">
+            <ul class="footer_column fl fl_column">
+                <h3>Links</h3>
+                <a href="https://frc7787.ca">Home</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="competitions.html">Competitions</a>
+                <a href="brand.html">Brand</a>
+            </ul>
+            <ul class="footer_column fl fl_column">
+                <h3>Social</h3>
+                <a href="https://www.instagram.com/reybots7787">Instagram</a>
+                <a href="https://github.com/reybots7787">Github</a>
+                <a href="https://www.facebook.com/reybots7787">Facebook</a>
+                <a href="mailto:reybots7787@gmail.com">reybots7787@gmail.com</a>
+            </ul>
+            <ul class="footer_column fl fl_column">
+                <h3>Competitions</h3>
+                <a href="https://www.thebluealliance.com/team/7787#2019cmptx">First Championship (Houston)</a>
+                <a href="https://www.thebluealliance.com/team/7787#2019bcvi">Canadian Pacific Regional</a>
+            </ul>
+        </div>
+    </footer>
+
+    <style>
+        /* Importing the necessary fonts */
+        @import url('https://fonts.googleapis.com/css?family=Oswald:700|Source+Sans+Pro:400');
+        /* Separated to reduce the first load of fonts */
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700');
+    </style>
+</body>
+
 </html>

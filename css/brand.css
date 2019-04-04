@@ -1,0 +1,157 @@
+/* Colors for the sections */
+/* 'color' sets the text color of the section while the 'background' sets the theme (sometimes in gradient) */
+.introduction,
+.introduction_nav {
+    color: black;
+    background: #fbd743;
+}
+
+.guidelines,
+.guidelines_nav {
+    color: black;
+    background: #f0f0f0;
+}
+
+.download,
+.download_nav {
+    color: black;
+    background: #acf79b;
+}
+
+/* Set the grids */
+/* About fr https://css-tricks.com/introduction-fr-css-unit/ */
+.left_image_content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 0px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+@media (max-width: 940px) {
+
+    .left_image_content {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .first_image {
+        display: none;
+    }
+}
+
+/* Text sizes */
+/* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
+
+/* The other headers */
+.sub_text {
+    font-size: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+    margin: 0px 0px 30px 0px;
+    line-height: calc(50px + (60 - 50) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* The other descriptions */
+.small_text {
+    font-size: calc(20px + (24 - 20) * ((100vw - 940px) / (1920 - 940)));
+    margin: 0px 0px 7% 0px;
+}
+
+.referrer:link,
+.referrer:hover,
+.referrer:visited,
+.referrer:active {
+    color: black;
+    text-decoration: none;
+    margin-top: 16px;
+    font-size: calc(12px + (16 - 12) * ((100vw - 940px) / (1920 - 940)));
+}
+
+.referrer:hover {
+    text-decoration: underline;
+}
+
+/* Guideline box style */ 
+.guideline_box, .download_box {
+    width: 240px;
+    min-height: 200px;
+    border-color: #e8e8e8;
+    border-radius: 10px 10px 8px 8px;
+    margin: 2% 5% 3% 0px;
+}
+
+.guideline_photo, .download_photo {
+    width: 240px;
+    height: 200px;
+    border-radius: 8px 8px 10px 10px;
+}
+
+.download_photo {
+    margin: 0px 0px 0px 0px;
+}
+
+.rule p, .rule b, .download p, .download_button {
+    z-index: inherit;
+    text-align: center;
+    font-size: calc(16px + (18 - 16) * ((100vw - 940px) / (1920 - 940)));
+}
+
+.download {
+    z-index: -1;
+}
+
+.download_hover {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    margin: 5px 0px 0px 0px; 
+    position: absolute; 
+    background-color: #8D04C8;
+    width: 240px;
+    z-index: 10;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px;
+    vertical-align: middle;
+    
+    
+    
+}
+
+.download_box {
+    display: block;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.download_hover,
+.download_hover:link,
+.download_hover:hover,
+.download_hover:active,
+.download_hover:visited {
+    text-align: center;
+    font-size: calc(20px + (24 - 20) * ((100vw - 940px) / (1920 - 940)));
+    color: white;
+    text-decoration: none;
+}
+
+.download_hover:hover {
+    text-decoration: underline;
+}
