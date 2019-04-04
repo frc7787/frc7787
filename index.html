@@ -1,64 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link rel="shortcut icon" href="img/bannerless.png">
-		<meta charset="utf-8">
-		<meta lang="en-ca">
-		<meta name="viewport" content="width=device-width">
-		<meta name="keywords" content="Reybots, Robotics, Reynolds, FIRST, frc, 7787">
-		<meta name="description" content="The official site of the Reynolds Reybots">
-		<meta name="author" content="Connor & Markel">
-		<title>Reynolds Reybots</title>
-		<link rel="canonical" href="https://frc7787.ca/">
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
-		<!-- JQUery from Google -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	</head>
-	
-	<body>
-		<div class="top">
-			<div class="nav">
-				<div class="titles">
-					<img class="logo" src="img/logo.png">
-					<!-- <h1><span class="rey">Reynolds </span>Reybots</h1> -->
-				</div>
-				<!-- Menu bar -->
-			
-				<div class="topnav"> 
-								<a class="active" href="#">Home</a>
-								<a href="sponsors.html">Sponsors</a>
-								<a href="contact.html">✉</a>
-				</div>
-			</div>	
-		</div>
-			<!-- This is the part that applies backgrounds, if you want to increase the number of images create a new <img> with id 'slide' + the next number.-->
-			<div class="photos">
-				<img id="slide1" class="back" src="slideshow/a.jpeg" alt="Team looking at the computer">
-				<img style="display: none;" id="slide2" class="back" src="slideshow/b.jpeg" alt="Team with the robot">
-				<img style="display: none;" id="slide3" class="back" src="slideshow/c.jpeg" alt="Team lifting things">
-				<img style="display: none;" id="slide4" class="back" src="slideshow/d.jpeg" alt="Team testing">
-				<img style="display: none;" id="slide5" class="back" src="slideshow/e.jpeg" alt="Team's hardware">
-				<img style="display: none;" id="slide6" class="back" src="slideshow/f.jpeg" alt="Team united">
-				<img style="display: none;" id="slide7" class="back" src="slideshow/g.JPG" alt="Team testing the robot">
-				<img style="display: none;" id="slide8" class="back" src="slideshow/h.JPG" alt="Team working">	
-			</div>
-		</div>
-	</div>
-		<div style="background-color: #181818;" class="down">
-			<div class="text">
-				<h2>About us</h2><p>The Reynolds Reybots are a FIRST Robotics team from Reynolds Secondary School, Greater Victoria School District 61. The team was founded by a group of students who were passionate in STEM and interested in starting a robotics team with the intention to compete in the FIRST Robotics Competition. As a rookie team, the Reynolds Reybots hopes to learn from other more experienced teams in the competition as well as foster the interest of science, technology, engineering and mathematics in their community.</p>
-			</div>
-			<div class="big">
-				<!-- SnapWidget -->
-				<script src="https://snapwidget.com/js/snapwidget.js"></script>
-				<iframe src="https://snapwidget.com/embed/650558" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;"></iframe>
-			</div>
-			<div class="small">
-				<!-- SnapWidget -->
-				<iframe src="https://snapwidget.com/embed/650567" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:960px; height:160px"></iframe>
-			</div>
-		</div>
-	</body>
-	<!-- <script src="js/script.js"></script> -->
-	<script src="js/slideshow.js"></script>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- Seo thanks to https://stackoverflow.com/a/43154489/9547841 --> 
+    <title>Reynolds Reybots</title>
+    <meta name="description" content="Reynolds Reybots is a passionate robotics team formed by students from Victoria, BC"> <!-- Max 155 characters -->
+    <meta property="og:title" content="Reynolds Reybots" />
+    <meta property="og:url" content="https://frc7787.ca/" />
+    <meta property="og:description" content="Reynolds Reybots is a passionate robotics team formed by students"> <!-- Max 65 characters -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:locale:alternate" content="en_US" />
+        <!-- Website image-->
+    <meta property="og:image" content="//frc7787.ca/img/seo/index.jpg">
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:alt" content="Reybots logo in a blue background" />
+
+    <!-- Favicon https://stackoverflow.com/a/43154399/9547841 -->
+    <link rel="shortcut icon" href="/img/seo/favicon/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/img/seo/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/img/seo/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/img/seo/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/img/seo/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/img/seo/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/seo/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/seo/favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="/img/seo/favicon/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/seo/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/seo/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/seo/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/seo/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/seo/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/seo/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/seo/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/seo/favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#4169e1">
+	<meta name="msapplication-TileImage" content="/img/seo/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="/img/seo/favicon/browserconfig.xml">
+
+    <!-- Importing css-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Polifylls -->
+
+
+    <!-- Importing javascript -->
+    <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+</head>
+
+<body data-instant-allow-query-string data-instant-allow-external-links>
+    <section class="chunk first">
+        <div class="nav_div">
+            <nav class="first_nav">
+                <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
+                    <img src="img/logo/bannerless.webp" width="60px" height="60px" alt="">
+                    <h1 class="reybots">Reynolds Reybots</h1>
+                </div>
+                <div class="right_nav">
+                    <a class="nav_link" href="competitions.html">Competitions</a>
+                    <a class="nav_link" href="sponsors.html">Sponsors</a>
+                </div>
+            </nav>
+        </div>
+        <div class="content_div first_content">
+            <div class="fl fl_column fl_direction_space-around">
+                <h2 class="frc_text">FRC 7787</h2>
+                <p class="first_text">We are a group of highschool students from Reynolds Secondary who are interested
+                    in the fields of
+                    Science, Technology, Engineering and Mathematics.</p>
+                <p class="first_text">We started this team at the beginning of this school year with the intentions of
+                    competing in the
+                    FIRST Robotics Competition.</p>
+            </div>
+            <div class="first_image fl fl_row fl_nowrap fl_direction_middle fl_nodirection_middle">
+                <img width="100%" src="img/logo/fullbig.webp" alt="Reybots logo">
+            </div>
+        </div>
+    </section>
+    <section class="chunk second">
+        <div class="nav_div">
+            <nav class="second_nav">
+                <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
+                    <img src="img/logo/fullbig.webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="right_nav">
+                    <a class="nav_link" href="competitions.html">Competitions</a>
+                    <a class="nav_link" href="sponsors.html">Sponsors</a>
+                </div>
+            </nav>
+        </div>
+        <div class="content_div second_content">
+            <div class="fl fl_column fl_direction_middle fl_nodirection_middle">
+                <div class="youtube">
+                    <iframe class="iframed" src="https://www.youtube.com/embed/qbncYTa1kU4" frameborder="0"
+                        allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="fl fl_column fl_direction_space-around">
+                <h2 class="sub_text second_title">Our robot</h2>
+                <p class="small_text">It is designed to pick up the cargo balls and deposit them into the cargo bay.
+                </p>
+                <p class="small_text">We decided to incorporate the use of compliant wheels, which are very squishy
+                    rubber wheels. If we spun them fast enough, they could push the ball into the compartment and hold
+                    it there. If we spun the wheels the other way, the ball would be spat out.</p>
+                <div class="fl fl_row fl_direction_middle but_mar">
+                    <a class="button b_blue small_text" href="https://www.thebluealliance.com/team/7787">Check it
+                        out</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="chunk third">
+        <div class="nav_div">
+            <nav class="third_nav">
+                <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
+                    <img src="img/logo/fullbig.webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="right_nav">
+                    <a class="nav_link" href="competitions.html">Competitions</a>
+                    <a class="nav_link" href="sponsors.html">Sponsors</a>
+                </div>
+            </nav>
+        </div>
+        <div class="content_div third_content">
+            <div class="fl fl_column fl_direction_space-around">
+                <h2 class="sub_text">Connect with us</h2>
+                <p class="small_text">We love social media! We publish everything there, even our troubles. If you want
+                    to follow our adventures check our Instagram and Facebook.</p>
+                <p class="small_text">We also publish our code in Github. Yes, this website and our robot code are open
+                    source, check it out.</p>
+                <div class="fl_inline fl_row fl_direction_space-around fl_wrap">
+                    <a class="button b_insta small_text" href="https://www.instagram.com/reybots7787"><img
+                            class="but_social" src="img/assets/instagram.svg" alt="Instagram"></a>
+                    <a class="button b_face small_text" href="https://www.facebook.com/reybots7787"><img
+                            class="but_social" src="img/assets/facebook.svg" alt="Facebook"></img></a>
+                    <a class="button b_git small_text" href="https://github.com/reybots7787"><img class="but_social"
+                            src="img/assets/github.svg" alt="Github"></img></a>
+                </div>
+            </div>
+            <div id="gallery" class="insta_gallery fl fl_column fl_nodirection_middle fl_direction_middle">
+                <!-- InstaWidget -->
+                <a style="width: 100%; height: 100%;" href="https://instawidget.net/v/user/reybots7787"
+                    id="link-6a80c686eb04afa9cb0ad1cb9b92bfed33a936cc1b3a19a883a062428bcc947f">@reybots7787</a>
+                <script
+                    src="https://instawidget.net/js/instawidget.js?u=6a80c686eb04afa9cb0ad1cb9b92bfed33a936cc1b3a19a883a062428bcc947f&width=100%&height=100%">
+                </script>
+            </div>
+        </div>
+    </section>
+    <section class="chunk forth">
+        <div class="nav_div">
+            <nav class="forth_nav">
+                <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
+                    <img src="img/logo/fullbig.webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="right_nav">
+                    <a class="nav_link" href="competitions.html">Competitions</a>
+                    <a class="nav_link" href="sponsors.html">Sponsors</a>
+                </div>
+            </nav>
+        </div>
+        <div class="content_div forth_content">
+            <div class="award_photo fl fl_direction_middle fl_nodirection_middle">
+                <img class="win_svg" src="img/assets/wins.svg" alt="Winning paper">
+            </div>
+            <div class="fl fl_column fl_direction_middle">
+                <h2 class="sub_text">Our awards</h2>
+                <ul class="award_list fl fl_column">
+                    <li style="border-color: #dacdc4;"
+                        onclick="window.location='https://www.thebluealliance.com/team/7787#2019bcvi'">
+                        <div class="award_title">
+                            <img src="https://img.icons8.com/ios/50/000000/certificate.png">
+                            <p class="small_text award_desc">Rookie All Star</p>
+                        </div>
+                        <div class="award_info">
+                            <p class="award_year">2019</p>
+                            <p class="award_year location">Victoria</p>
+                        </div>
+                    </li>
+
+                    <!-- To create new awards you can copy the template down here and fill the gaps-->
+                    <!-- Border color defaults to #3850a2 -->
+                    <!-- <img src="https://img.icons8.com/ios/50/000000/certificate.png"> For small awards
+                         <img src="https://img.icons8.com/pastel-glyph/64/000000/trophy--v1.png"> When we are winners :D -->
+
+                    <!-- <li style="border-color: <color>;" onclick="window.location='<link>'">
+                        <div class="award_title">
+                            <img src="<image>">
+                            <p class="small_text award_desc"><Award title></p>
+                        </div>
+                        <div class="award_info">
+                            <p class="award_year"><Year>></p>
+                            <p class="award_year location"><Location>></p>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="nav_div">
+            <nav class="footer_nav">
+                <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
+                    <img src="img/logo/fullbig.webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="right_nav">
+                    <a class="nav_link" href="competitions.html">Competitions</a>
+                    <a class="nav_link" href="sponsors.html">Sponsors</a>
+                </div>
+            </nav>
+        </div>
+        <div class="content_div footer_content">
+            <ul class="footer_column fl fl_column">
+                <h3>Links</h3>
+                <a href="https://frc7787.ca">Home</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="competitions.html">Competitions</a>
+                <a href="brand.html">Brand</a>
+            </ul>
+            <ul class="footer_column fl fl_column">
+                <h3>Social</h3>
+                <a href="https://www.instagram.com/reybots7787">Instagram</a>
+                <a href="https://github.com/reybots7787">Github</a>
+                <a href="https://www.facebook.com/reybots7787">Facebook</a>
+                <a href="mailto:reybots7787@gmail.com">reybots7787@gmail.com</a>
+            </ul>
+            <ul class="footer_column fl fl_column">
+                <h3>Competitions</h3>
+                <a href="https://www.thebluealliance.com/team/7787#2019cmptx">First Championship (Houston)</a>
+                <a href="https://www.thebluealliance.com/team/7787#2019bcvi">Canadian Pacific Regional</a>
+            </ul>
+        </div>
+    </footer>
+
+    <style>
+        /* Importing the necessary fonts */
+        @import url('https://fonts.googleapis.com/css?family=Oswald:700|Source+Sans+Pro:400');
+        /* Separated to reduce the first load of fonts */
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700');
+    </style>
+</body>
+
 </html>

@@ -1,49 +1,40 @@
 /* Colors for the sections */
 /* 'color' sets the text color of the section while the 'background' sets the theme (sometimes in gradient) */
-.platinum,
-.platinum_nav {
+.houston,
+.houston_nav {
     color: black;
-    background: #e5e4e2;
+    background: #F1B300;
 }
 
-.bronze,
-.bronze_nav {
+.pacific,
+.pacific_nav {
     color: black;
-    background: #f3a252;
+    background: #78BD70;
 }
 
 /* Set the grids */
 /* About fr https://css-tricks.com/introduction-fr-css-unit/ */
-.content_div {
-    min-height: calc(100% - 70px);
-    padding: 70px 0% 0px 0%;
-}
-
-.content_div h3 {
-    padding-left: 4%;
-}
-
-.bronze_content {
+.right_image_content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 0px;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 2.5%;
     grid-row-gap: 0px;
     justify-items: stretch;
     align-items: stretch;
 }
 
-.platinum_content {
+.left_image_content {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-column-gap: 0%;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2.5%;
     grid-row-gap: 0px;
     justify-items: stretch;
     align-items: stretch;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 940px) {
 
-    .bronze_content {
+    .right_image_content {
         display: grid;
         grid-template-columns: auto;
         grid-column-gap: 0px;
@@ -52,7 +43,7 @@
         align-items: stretch;
     }
 
-    .platinum_content {
+    .left_image_content {
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: none;
@@ -104,46 +95,5 @@
 
     .but_mar {
         margin-top: 3%;
-    }
-}
-
-.sponsor_box {
-    padding: 50px 15% 40px 15%;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.sponsor_logo {
-    margin-bottom: 30px;
-}
-
-.platinum_sponsor_logo {
-    padding-left: 5%;
-}
-
-.platinum_sponsor {
-    padding: 100px 0px 100px 0px;
-}
-
-.platinum_desc {
-    padding: 0px 5% 0px 5%;
-}
-
-.button {
-    margin: initial;
-}
-
-@media (max-width: 700px) {
-    .platinum_sponsor_logo {
-        padding-right: 5%;
-        margin-bottom: 5%;
     }
 }

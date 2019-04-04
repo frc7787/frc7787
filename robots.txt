@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://frc7787.ca/sitemap.xml
