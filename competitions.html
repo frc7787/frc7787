@@ -53,6 +53,7 @@
 
     <!-- Importing javascript -->
     <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+    <script src="js/picturefill.min.js"></script>
 </head>
 
 <body data-instant-allow-query-string data-instant-allow-external-links>
@@ -106,7 +107,23 @@
         </div>
         <div class="content_div left_image_content">
             <div class="compe_photo fl fl_column fl_direction_middle fl_nodirection_middle">
-                <img src="img/photos/pacific.jpg" alt="Team after winning the rookie award" width="100%">
+                <style>
+                /* https://stackoverflow.com/a/28009964 */
+                @media only screen {
+                    .webp_container img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                </style>
+                <div class="webp_container">
+                    <picture style="width: 100%;">
+                        <source srcset="img/photos/pacific.webp" sizes="" type="image/webp" style="width: 100%;">
+                        <source srcset="img/photos/pacific.jpg" type="image/jpeg" style="width: 100%;"> 
+                        <img src="img/photos/pacific.jpg" alt="Team after winning the rookie award">
+                    </picture>
+                </div>
+                <!-- <img srcset="img/photos/pacific.webp, img/photos/pacific.jpg" alt="Team after winning the rookie award" width="100%"> -->
             </div>
             <div class="fl fl_column fl_direction_space-around">
                 <div class="compe_title">
