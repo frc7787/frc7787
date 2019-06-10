@@ -11,3 +11,5 @@ The Reynolds Reybots website source code
 This are snippets of code that we have used throught the entire website
 - Using WebP Images by CSS-Tricks [https://css-tricks.com/using-webp-images/](https://css-tricks.com/using-webp-images/)
 - Apply CSS to the <picture> element picture by [Fox](https://stackoverflow.com/users/4466232/fox) [https://stackoverflow.com/a/28009964](https://stackoverflow.com/a/28009964)
+
+And to the tenths of StackOverflow answers + other articles referenced inline
