@@ -126,6 +126,12 @@
     }
 }
 
+@media only screen {
+    .desktop_logo img {
+        width: 100%;
+    }
+}
+
 /* Text sizes */
 /* Check https://css-tricks.com/books/volume-i/scale-typography-screen-size/ & https://css-tricks.com/snippets/css/fluid-typography/ */
 

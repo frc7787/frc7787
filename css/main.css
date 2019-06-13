@@ -136,6 +136,14 @@ h1 {
 
 }
 
+/* Picture element */
+@media only screen {
+    .nav_bar_picture img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
 /* ------------------------- Footer -------------------------- */
 
 footer,

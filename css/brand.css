@@ -87,10 +87,13 @@
     margin: 2% 5% 3% 0px;
 }
 
-.guideline_photo, .download_photo {
-    width: 240px;
-    height: 200px;
-    border-radius: 8px 8px 10px 10px;
+
+@media only screen {
+    .guideline_photo img, .download_photo img {
+        width: 240px;
+        height: 200px;
+        border-radius: 8px 8px 10px 10px;
+    }
 }
 
 .download_photo {
@@ -154,4 +157,13 @@
 
 .download_hover:hover {
     text-decoration: underline;
+}
+
+@media only screen {
+    .georgie_cobbs img {
+        width: 100%;
+        margin-left: 12px;
+        max-width: 488px;
+        max-height: 650px;
+    }
 }

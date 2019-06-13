@@ -97,3 +97,11 @@
         margin-top: 3%;
     }
 }
+
+/* Competition picture made a 100% width */
+@media only screen {
+    .competition_picture img {
+        width: 100%;
+        height: auto;
+    }
+}

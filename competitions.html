@@ -53,6 +53,7 @@
 
     <!-- Importing javascript -->
     <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+    <script src="js/picturefill.min.js"></script>
 </head>
 
 <body data-instant-allow-query-string data-instant-allow-external-links>
@@ -60,7 +61,11 @@
         <div class="nav_div">
             <nav class="houston_nav">
                 <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
-                    <img src="img/logo/bannerless.webp" width="60px" height="60px" alt="">
+                    <picture class="nav_bar_picture" style="width: 60px; height: 60px;">
+                        <source srcset="img/logo/bannerless.webp" sizes="" type="image/webp">
+                        <source srcset="img/logo/bannerless.png" type="image/png"> 
+                        <img src="img/logo/bannerless.png" alt="Team logo picture">
+                    </picture>
                     <h1 class="reybots">Reynolds Reybots</h1>
                 </div>
                 <div class="right_nav">
@@ -78,12 +83,15 @@
                 <p class="small_text">The FIRST Championship in Houston Texas was an amazing experience that we will never forget. First of all, the scale of the competition is enormous. The George R Browning Convention Center is huge, and it was filled with FIRST competitions, including FRC, FTC, FLL, and FLL jr.</p>
                 <p class="small_text">We were part of Hopper, one of six FRC divisions. Competition was intense. We spent four solid days troubleshooting, fixing, and competing, while taking advantage of the opportunity to watch matches and talk to teams from around the world. We also spent a day at Space Center Houston, where we were inspired by such as extraordinary sights as NASA's Mission Control and the massive Saturn V rocket.</p>
                 <div class="fl fl_row fl_direction_middle but_mar">
-                    <a class="button b_purple small_text" href="https://www.thebluealliance.com/team/7787#2019hop">Check
-                        it out</a>
+                    <a class="button b_purple small_text" href="https://www.thebluealliance.com/team/7787#2019hop">Check it out</a>
                 </div>
             </div>
-            <div class="first_image fl fl_row fl_nowrap fl_direction_middle fl_nodirection_middle">
-                <img src="img/photos/first_championship.JPG" alt="Team in front of the FIRST logo" width="100%">
+            <div class="compe_photo fl fl_column fl_direction_middle fl_nodirection_middle">
+                <picture class="competition_picture" style="width: 100%;">
+                    <source srcset="img/photos/first_championship.webp" sizes="" type="image/webp">
+                    <source srcset="img/photos/first_championship.JPG" type="image/jpeg"> 
+                    <img src="img/photos/first_championship.JPG" alt="Team in front of the FIRST logo">
+                </picture>
             </div>
         </div>
     </section>
@@ -91,7 +99,11 @@
         <div class="nav_div">
             <nav class="pacific_nav">
                 <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
-                    <img src="img/logo/fullbig.webp" width="60px" height="60px" alt="">
+                    <picture class="nav_bar_picture" style="width: 60px; height: 60px;">
+                        <source srcset="img/logo/full.webp" sizes="" type="image/webp">
+                        <source srcset="img/logo/full.png" type="image/png"> 
+                        <img src="img/logo/full.png" alt="Team logo picture">
+                    </picture>
                 </div>
                 <div class="right_nav">
                     <a class="nav_link" href="competitions.html">Competitions</a>
@@ -101,7 +113,11 @@
         </div>
         <div class="content_div left_image_content">
             <div class="compe_photo fl fl_column fl_direction_middle fl_nodirection_middle">
-                <img src="img/photos/pacific.jpg" alt="Team after winning the rookie award" width="100%">
+                <picture class="competition_picture" style="width: 100%;">
+                        <source srcset="img/photos/pacific.webp" sizes="" type="image/webp">
+                        <source srcset="img/photos/pacific.jpg" type="image/jpeg"> 
+                        <img src="img/photos/pacific.jpg" alt="Team after winning the rookie award">
+                </picture>
             </div>
             <div class="fl fl_column fl_direction_space-around">
                 <div class="compe_title">
@@ -122,7 +138,11 @@
         <div class="nav_div">
             <nav class="footer_nav">
                 <div class="left_nav" onclick="window.location.assign('https://frc7787.ca')">
-                    <img src="img/logo/fullbig.webp" width="60px" height="60px" alt="">
+                    <picture class="nav_bar_picture" style="width: 60px; height: 60px;">
+                        <source srcset="img/logo/full.webp" sizes="" type="image/webp">
+                        <source srcset="img/logo/full.png" type="image/png"> 
+                        <img src="img/logo/full.png" alt="Team logo picture">
+                    </picture>
                 </div>
                 <div class="right_nav">
                     <a class="nav_link" href="competitions.html">Competitions</a>
