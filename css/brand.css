@@ -158,3 +158,12 @@
 .download_hover:hover {
     text-decoration: underline;
 }
+
+@media only screen {
+    .georgie_cobbs img {
+        width: 100%;
+        margin-left: 12px;
+        max-width: 488px;
+        max-height: 650px;
+    }
+}
