@@ -86,6 +86,19 @@ nav>div {
     cursor: pointer;
 }
 
+/* Next 3 rules allow for a copy paste nav check #27 */
+.bannerless_nav {
+    display: none;
+}
+        
+section:first-child > .nav_div > nav > .full_nav {
+    display: none;
+}
+
+section:first-child > .nav_div > nav > .bannerless_nav {
+    display: flex;
+}
+
 .right_nav {
     width: 20%;
     display: -ms-flexbox;
