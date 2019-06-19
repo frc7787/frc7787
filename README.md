@@ -14,4 +14,5 @@ This are snippets of code that we have used throught the entire website
 
 And to the tenths of StackOverflow answers + other articles referenced inline
 
-Browser testing done via 
+
+Browser testing done via [![BrowserStack](https://raw.githubusercontent.com/frc7787/frc7787/master/img/sponsors/Browserstack-logo.svg)](https://www.browserstack.com)
