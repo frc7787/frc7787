@@ -13,3 +13,5 @@ This are snippets of code that we have used throught the entire website
 - Apply CSS to the <picture> element picture by [Fox](https://stackoverflow.com/users/4466232/fox) [https://stackoverflow.com/a/28009964](https://stackoverflow.com/a/28009964)
 
 And to the tenths of StackOverflow answers + other articles referenced inline
+
+Browser testing done via 
