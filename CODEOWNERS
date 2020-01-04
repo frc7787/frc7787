@@ -1,7 +1,2 @@
-# @kkarim is the global owner, if code is not edited he will be asked for review
-*       @kkarim
-
-# Ask for review to @MarkelFe if code is edited
-*.js    @MarkelFe
-*.html  @MarkelFe
-*.css   @MarkelFe
+# Global code owner default
+* @logankuzyk
